@@ -1,0 +1,77 @@
+@startuml
+title Оформление заказа: успешный сценарий
+skinparam defaultFontName Arial
+skinparam dpi 110
+autonumber
+
+actor "Покупатель" as buyer
+participant "Мобильное\nприложение" as app
+participant "Заказы" as orders
+queue "Kafka" as kafka
+participant "Склад" as inventory
+participant "Платежи" as payments
+participant "Платёжный\nшлюз" as pg
+participant "Приём\nвебхуков" as hooks
+participant "Корзина" as cart
+participant "Доставка" as delivery
+participant "Логистический\nпровайдер" as lp
+participant "Уведомления" as notif
+
+note across : Сплошная стрелка — синхронный вызов, стрелка с открытым концом — асинхронная доставка через Kafka.\nСервис пишет событие и снимок в outbox в одной транзакции со своими данными.\nЗапросы приложения идут через API Gateway и BFF мобильного приложения, вебхуки — через API Gateway в сервис приёма вебхуков,\nвызовы внешних систем — через прокси.
+
+buyer -> app : Указывает адрес и способ доставки
+app -> delivery : Проверить адрес, стоимость и срок
+delivery -> delivery : Ищет в своей модели\nзон и тарифов
+delivery --> app : Доставка возможна, стоимость, срок
+buyer -> app : Подтверждает заказ
+app -> orders : POST /orders
+orders -> orders : Цены — из проекции каталога,\nдоставка — из проекции тарифов;\nотправления по продавцам; «Создан»
+orders --> app : 202, номер заказа
+orders ->> kafka : OrderCreated + снимок заказа
+kafka ->> inventory : OrderCreated
+inventory -> inventory : Резервирует товары\nиз снимка заказа на 20 минут
+inventory ->> kafka : StockReserved
+group StockReserved читают заказы и платежи
+  kafka ->> orders : StockReserved
+  orders -> orders : «Ожидает оплаты»
+  kafka ->> payments : StockReserved
+end
+payments -> payments : Сумма и способ оплаты —\nиз проекции снимка заказа
+alt Карта привязана
+  payments -> pg : Списание по токену карты\n(ключ идемпотентности)
+else Оплата на платёжной странице
+  payments -> pg : Создаёт платёж (ключ идемпотентности)
+  pg --> payments : Ссылка на платёжную страницу
+  app -> payments : Запрашивает ссылку на оплату
+  payments --> app : Ссылка
+  buyer -> pg : Вводит данные карты
+end
+pg -> hooks : Вебхук: оплата прошла
+hooks -> hooks : Проверяет подпись,\nотбрасывает повтор
+hooks ->> kafka : PaymentGatewayWebhookReceived
+kafka ->> payments : PaymentGatewayWebhookReceived
+payments ->> kafka : PaymentSucceeded
+group PaymentSucceeded читают заказы, склад, корзина, уведомления и доставка
+  kafka ->> orders : PaymentSucceeded
+  orders -> orders : «Оплачен и готовится к отправке»;\nотправления — «Ожидает заявки»
+  kafka ->> inventory : PaymentSucceeded
+  inventory -> inventory : Резерв без срока —\nдо передачи в доставку
+  kafka ->> cart : PaymentSucceeded
+  cart -> cart : Убирает товары этого заказа
+  kafka ->> notif : PaymentSucceeded
+  notif -> notif : Продавцам: «Новый заказ,\nподготовьте товар»
+  kafka ->> delivery : PaymentSucceeded
+end
+loop Для отправления каждого продавца
+  delivery -> lp : Создаёт заявку\n(ключ — номер отправления)
+  lp --> delivery : Трек-номер, дата доставки
+  delivery ->> kafka : ShipmentCreated
+end
+group ShipmentCreated читают заказы и уведомления
+  kafka ->> orders : ShipmentCreated
+  orders -> orders : Отправление — «Заявка принята»,\nтрек-номер и дата
+  kafka ->> notif : ShipmentCreated
+  notif -> notif : Покупателю: трек-номер
+end
+note over orders, notif : Сага оформления завершена. Дальше статусы отправлений меняют события доставки по вебхукам логистики (LogisticsWebhookReceived):\nShipmentDispatched — «Передано в доставку», склад списывает товар; ShipmentDelivered — «Доставлено».\nЗаказ — «Передан в доставку», когда переданы все отправления, и «Доставлен», когда доставлены все.
+@enduml

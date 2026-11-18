@@ -1,0 +1,128 @@
+@startuml
+!include <C4/C4_Container>
+LAYOUT_TOP_DOWN()
+skinparam nodesep 20
+skinparam ranksep 70
+skinparam defaultFontName Arial
+skinparam dpi 110
+show stereotype
+
+title NovaMarket MVP — контейнеры (C2)
+
+Person(buyer, "Покупатель")
+Person(seller, "Продавец")
+Person(support, "Поддержка")
+
+System_Boundary(nova, "NovaMarket") {
+  Container(app, "Мобильное приложение", "iOS, Android", "Каталог, корзина,\nоформление и статусы заказов")
+  Container(cabinet, "Веб-кабинет", "React, Vite", "Продавцы: товары, остатки, заказы;\nподдержка: отправления\n«Требует внимания»")
+
+  Boundary(edge, "Входной слой") {
+    Container(gw, "API Gateway", "NGINX", "Единая точка входа: TLS,\nлимиты по каналам, вебхуки")
+    Container(mbff, "BFF мобильного приложения", "C#, .NET", "Направляет запросы\nприложения к сервисам;\nтокен — от приложения;\nAPI для старых версий")
+    Container(bff, "BFF веб-кабинета", "C#, .NET", "Направляет запросы\nкабинета к сервисам;\nвход через Keycloak;\nбраузеру — cookie сессии")
+    ContainerDb(sessions, "Сессии кабинета", "Redis", "Сессии и токены\nпользователей кабинета")
+    Container(hooks, "Приём вебхуков", "C#, .NET", "Единственный вход\nдля внешних систем;\nпроверяет подпись,\nпубликует события")
+  }
+
+  Container(catalog, "Каталог", "C#, .NET", "Товары, цены, категории, фильтры;\nналичие и рейтинг из снимков")
+  Container(reviews, "Отзывы", "C#, .NET", "Отзывы и рейтинг товаров;\nотзыв — после доставки")
+  Container(sellers, "Продавцы", "C#, .NET", "Подключение продавцов:\nпрофиль, адрес отгрузки, контакты")
+  Container(cart, "Корзина", "C#, .NET", "Товары, выбранные\nдо оформления")
+  Container(notifications, "Уведомления", "C#, .NET", "Продавцам и покупателям")
+  Container(orders, "Заказы", "C#, .NET", "Оформление, статусы заказов\nи отправлений")
+  Container(inventory, "Склад", "C#, .NET", "Остатки и резервы")
+  Container(payments, "Платежи", "C#, .NET", "Оплата, привязанные карты,\nвозвраты, срок оплаты")
+  Container(delivery, "Доставка", "C#, .NET", "Отправления по продавцам,\nзоны и тарифы, заявки")
+
+  ContainerDb(catalog_db, "БД каталога", "PostgreSQL", "")
+  ContainerDb(reviews_db, "БД отзывов", "PostgreSQL", "")
+  ContainerDb(sellers_db, "БД продавцов", "PostgreSQL", "")
+  ContainerDb(cart_db, "БД корзин", "PostgreSQL", "")
+  ContainerDb(notifications_db, "БД уведомлений", "PostgreSQL", "")
+  ContainerDb(hooks_db, "БД приёма вебхуков", "PostgreSQL", "")
+  ContainerDb(orders_db, "БД заказов", "PostgreSQL", "")
+  ContainerDb(inventory_db, "БД склада", "PostgreSQL", "")
+  ContainerDb(payments_db, "БД платежей", "PostgreSQL", "")
+  ContainerDb(delivery_db, "БД доставки", "PostgreSQL", "")
+
+  ContainerDb(media, "Фото товаров", "Объектное хранилище S3, CDN", "")
+
+  ContainerQueue(kafka, "Apache Kafka", "6 топиков событий, 6 топиков снимков", "События и снимки состояния;\nпубликует Debezium из outbox сервисов")
+  Container(connect, "Kafka Connect + Debezium", "Debezium PostgreSQL connector,\nOutbox Event Router", "Читает таблицы outbox из журнала\nPostgreSQL и публикует их в Kafka")
+  Container(egress, "Прокси внешних вызовов", "NGINX", "Тайм-ауты и Circuit Breaker\nдля внешних сервисов")
+}
+
+System_Ext(pay, "Платёжный шлюз", "Платёжная страница,\nсписания и возвраты")
+System_Ext(logistics, "Логистический провайдер", "Заявки, трек-номера, статусы")
+System_Ext(push, "Провайдеры уведомлений", "Push (APNs, FCM), email")
+System_Ext(idp, "Keycloak", "Вход покупателей, продавцов\nи поддержки (OIDC), ключи\nпроверки токенов")
+
+Rel(buyer, app, "Выбирает и заказывает")
+Rel(seller, cabinet, "Ведёт товары и заказы")
+Rel(support, cabinet, "Разбирает отправления")
+Rel(buyer, pay, "Оплачивает на платёжной странице")
+Rel(app, idp, "Вход, токен", "OIDC")
+Rel(app, gw, "API с токеном", "REST/HTTPS")
+Rel(cabinet, gw, "API, cookie сессии", "REST/HTTPS")
+Rel(gw, mbff, "Запросы приложения", "REST")
+Rel(gw, bff, "Запросы кабинета", "REST")
+Rel(bff, idp, "Вход, обмен кода\nна токен", "OIDC")
+Rel_R(bff, sessions, "Сессии\nи токены", "Redis")
+
+Rel(mbff, catalog, "Каталог", "REST")
+Rel(mbff, reviews, "Отзывы", "REST")
+Rel(mbff, cart, "Корзина", "REST")
+Rel(mbff, orders, "Заказы и статусы", "REST")
+Rel(mbff, payments, "Ссылка на оплату,\nпривязка карты", "REST")
+Rel(mbff, delivery, "Проверка адреса\nи стоимости", "REST")
+Rel_D(gw, hooks, "Вебхуки шлюза\nи логистики", "REST")
+Rel(mbff, notifications, "Push-токен устройства", "REST")
+Rel(bff, sellers, "Профиль продавца", "REST")
+Rel(bff, catalog, "Товары продавца", "REST")
+Rel(bff, inventory, "Остатки", "REST")
+Rel(bff, orders, "Заказы продавца,\nотправления для поддержки", "REST")
+Rel(bff, delivery, "Повтор заявки,\nотмена отправления", "REST")
+Rel(app, media, "Фото товаров", "HTTPS")
+Rel(catalog, media, "Загружает фото", "S3 API")
+
+Rel(catalog, catalog_db, "", "SQL")
+Rel(reviews, reviews_db, "", "SQL")
+Rel(sellers, sellers_db, "", "SQL")
+Rel(cart, cart_db, "", "SQL")
+Rel(notifications, notifications_db, "", "SQL")
+Rel(hooks, hooks_db, "", "SQL")
+Rel(orders, orders_db, "", "SQL")
+Rel(inventory, inventory_db, "", "SQL")
+Rel(payments, payments_db, "", "SQL")
+Rel(delivery, delivery_db, "", "SQL")
+
+Rel(catalog, kafka, "Читает снимки")
+Rel(reviews, kafka, "Читает")
+Rel(cart, kafka, "Читает")
+Rel(notifications, kafka, "Читает")
+Rel(orders, kafka, "Читает")
+Rel(inventory, kafka, "Читает")
+Rel(payments, kafka, "Читает")
+Rel(delivery, kafka, "Читает")
+
+Rel_U(connect, catalog_db, "", "outbox")
+Rel_U(connect, reviews_db, "", "outbox")
+Rel_U(connect, sellers_db, "", "outbox")
+Rel_U(connect, orders_db, "", "outbox")
+Rel_U(connect, inventory_db, "", "outbox")
+Rel_U(connect, payments_db, "", "outbox")
+Rel_U(connect, delivery_db, "", "outbox")
+Rel_U(connect, hooks_db, "", "outbox")
+Rel_U(connect, kafka, "Публикует события\nи снимки")
+
+Rel(payments, egress, "Платёж, возврат", "HTTPS")
+Rel(delivery, egress, "Заявки; зоны и тарифы\nраз в 3 часа", "HTTPS")
+Rel(notifications, egress, "Отправка уведомлений", "HTTPS")
+Rel(egress, pay, "API платежей", "HTTPS")
+Rel(egress, logistics, "API логистики", "HTTPS")
+Rel(egress, push, "Push, email", "HTTPS")
+Rel(pay, gw, "Результат оплаты", "Webhook, HTTPS")
+Rel(logistics, gw, "Статусы доставки", "Webhook, HTTPS")
+
+@enduml
