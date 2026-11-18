@@ -1,0 +1,26 @@
+Проверка: засчитываются ли ответы 5xx на POST неудачами при non_idempotent и без него.
+Образ nginx:1.29 (nginx/1.29.8), конфигурация nginx-circuit-breaker.conf; во втором прогоне из proxy_next_upstream убран только non_idempotent.
+18.11.2026, запросы curl к работающему контейнеру.
+
+## С non_idempotent (конфигурация задания)
+$ for i in 1..6: curl -X POST http://localhost:8080/logistics/error
+POST 1: 503, X-Upstream: 127.0.0.1:9090, 127.0.0.1:8099
+POST 2: 503, X-Upstream: 127.0.0.1:9090, 127.0.0.1:8099
+POST 3: 503, X-Upstream: 127.0.0.1:9090, 127.0.0.1:8099
+POST 4: 503, X-Upstream: 127.0.0.1:9090, 127.0.0.1:8099
+POST 5: 503, X-Upstream: 127.0.0.1:9090, 127.0.0.1:8099
+POST 6: 503, X-Upstream: 127.0.0.1:8099, logistics_backend
+$ curl http://localhost:8080/logistics/fast
+GET /fast: 503, X-Upstream: 127.0.0.1:8099, logistics_backend, {"status": "fallback", "service": "logistics", "message": "Logistics is temporarily unavailable, retry later"}
+
+## Без non_idempotent
+$ for i in 1..6: curl -X POST http://localhost:8080/logistics/error
+POST 1: 503, X-Upstream: 127.0.0.1:9090
+POST 2: 503, X-Upstream: 127.0.0.1:9090
+POST 3: 503, X-Upstream: 127.0.0.1:9090
+POST 4: 503, X-Upstream: 127.0.0.1:9090
+POST 5: 503, X-Upstream: 127.0.0.1:9090
+POST 6: 503, X-Upstream: 127.0.0.1:9090
+$ curl http://localhost:8080/logistics/fast
+GET /fast: 200, X-Upstream: 127.0.0.1:9090, {"status": "success", "endpoint": "fast", "message": "Quick response"}
+

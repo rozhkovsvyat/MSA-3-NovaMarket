@@ -1,0 +1,33 @@
+$ locust -f circuit_breaker.py --host=http://localhost:8080 --headless -u 1 -r 1 -t 100s --only-summary --loglevel WARNING
+00:36:34 Starting Circuit Breaker test...
+00:36:37 Logistics call failed (1), fallback after 3.0 s
+00:36:41 Logistics call failed (2), fallback after 3.0 s
+00:36:45 Logistics call failed (3), fallback after 3.0 s
+00:36:49 Logistics call failed (4), fallback after 3.0 s
+00:36:53 Logistics call failed (5), fallback after 3.0 s
+00:36:54 Circuit Breaker activated after 5 failed calls: fallback in 2 ms without calling logistics
+00:37:27 Probe call after the pause failed: Circuit Breaker stays open
+00:37:58 Logistics answers again: Circuit Breaker closed, calls restored
+00:38:13 Check passed: circuit opened after 5 failures, then calls were restored
+Type     Name                                                                # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      logistics broken                                                        42  42(100.00%) |    430       1    3004      3 |    0.42        0.42
+GET      logistics ok                                                            40   24(60.00%) |      3       1       6      4 |    0.40        0.24
+--------|------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                              82   66(80.49%) |    222       1    3004      3 |    0.82        0.66
+
+Response time percentiles (approximated)
+Type     Name                                                                        50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|----------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      logistics broken                                                              3      5      5      5   3000   3000   3000   3000   3000   3000   3000     42
+GET      logistics ok                                                                  4      4      5      5      5      5      6      6      6      6      6     40
+--------|----------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                    3      4      5      5      6   3000   3000   3000   3000   3000   3000     82
+
+Error report
+# occurrences      Error                                                                                               
+------------------|-----------------------------------------------------------------------------------------------------------------------------------
+6                  GET logistics broken: logistics failed, fallback after 3.0 s                                        
+36                 GET logistics broken: circuit open: fallback without calling logistics                              
+24                 GET logistics ok: circuit open: fallback without calling logistics                                  
+------------------|-----------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+Пачка из 20 одновременных запросов на каждый канал, с паузой 2 с между пачками:
+
+for i in $(seq 20); do curl -s -o /dev/null -w '%{http_code}\n' -H 'Client-Type: web' http://localhost:8080/api/products & done; wait
+
+Client-Type: web     — 200: 11, 429: 9
+Client-Type: mobile  — 200: 7,  429: 13
+Client-Type: tv      — 200: 7,  429: 13
+без Client-Type      — 200: 7,  429: 13
+
+Ответ сверх лимита (curl -i -H 'Client-Type: mobile' http://localhost:8080/api/products после пачки):
+
+HTTP/1.1 429 Too Many Requests
+Server: nginx/1.29.8
+Date: Tue, 17 Nov 2026 21:40:17 GMT
+Content-Type: application/json
+Content-Length: 30
+Connection: keep-alive
+Retry-After: 1
+
+{"error": "too_many_requests"}
