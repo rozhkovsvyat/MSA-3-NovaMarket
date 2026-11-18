@@ -1,0 +1,55 @@
+@startuml
+!include <C4/C4_Container>
+LAYOUT_TOP_DOWN()
+skinparam nodesep 40
+skinparam ranksep 80
+skinparam defaultFontName Arial
+skinparam dpi 110
+show stereotype
+
+title NovaMarket — C2, срез по сценарию «История покупок»\nПолная схема — c2-containers
+
+Person(buyer, "Покупатель")
+System_Ext(idp, "Keycloak", "Вход покупателя (OIDC)")
+System_Ext(pay, "Платёжный шлюз", "Платежи и фискальные чеки")
+
+System_Boundary(nova, "NovaMarket") {
+  Container(app, "Мобильное приложение", "iOS, Android", "Каталог, корзина, оформление,\nстатусы и история покупок")
+  Boundary(edge, "Входной слой") {
+    Container(gw, "API Gateway", "NGINX", "Единая точка входа: TLS,\nлимиты по каналам, вебхуки")
+    Container(mbff, "BFF мобильного приложения", "C#, .NET", "Направляет запросы\nприложения к сервисам;\nтокен — от приложения;\nAPI для старых версий")
+  }
+
+  Container(history, "История заказов", "C#, .NET", "Список и детали заказов покупателя;\nмодель чтения из снимков\nзаказов и платежей")
+  ContainerDb(history_db, "БД истории", "PostgreSQL", "Заказ целиком в одной записи,\nиндекс по покупателю и дате")
+
+  Container(orders, "Заказы", "C#, .NET", "Оформление и статус заказа;\nпубликует снимок заказа")
+  Container(payments, "Платежи", "C#, .NET", "Оплата, возвраты, чеки;\nпубликует снимок платежа")
+  ContainerDb(receipts, "Чеки", "Объектное хранилище S3", "Файлы фискальных чеков")
+  Container(egress, "Прокси внешних вызовов", "NGINX", "Тайм-ауты и Circuit Breaker")
+  Container(reviews, "Отзывы", "C#, .NET", "Отзыв — после доставки")
+  Container(cart, "Корзина", "C#, .NET", "Товары до оформления")
+
+  ContainerQueue(kafka, "Apache Kafka", "order~_~_v1~_~_snapshot,\npayment~_~_v1~_~_snapshot", "Снимки заказов\nи платежей")
+}
+
+Rel(buyer, app, "Смотрит историю покупок")
+Rel(app, idp, "Вход, токен", "OIDC")
+Rel(app, gw, "API с токеном", "REST/HTTPS")
+Rel_D(gw, mbff, "Запросы приложения", "REST")
+Rel(mbff, history, "Список и детали заказов,\nссылка на чек", "REST")
+Rel(mbff, reviews, "Отзыв о товаре", "REST")
+Rel(mbff, cart, "«Заказать снова»", "REST")
+Rel(mbff, orders, "Статус нового заказа", "REST")
+Rel(app, receipts, "Скачивает чек\nпо временной ссылке", "HTTPS")
+
+Rel(orders, kafka, "Публикует снимок заказа\n(outbox, Debezium)")
+Rel(payments, kafka, "Публикует снимок платежа\nс ключами чеков (outbox, Debezium)")
+Rel(history, kafka, "Читает снимки\nзаказов и платежей")
+Rel(reviews, kafka, "Читает снимок заказа:\nчто доставлено покупателю")
+Rel(history, history_db, "Читает и обновляет", "SQL")
+Rel(payments, egress, "Платежи, чеки", "HTTPS")
+Rel(egress, pay, "API платежей", "HTTPS")
+Rel(payments, receipts, "Кладёт чеки", "S3 API")
+Rel(history, receipts, "Подписывает ссылку\nна чтение", "S3 API")
+@enduml
