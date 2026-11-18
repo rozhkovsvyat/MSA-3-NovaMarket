@@ -1,0 +1,81 @@
+# 2026-11-18 00:10:57 MSK
+# kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/default/pods/*/http_requests_per_second" | python3 -m json.tool
+{
+    "kind": "MetricValueList",
+    "apiVersion": "custom.metrics.k8s.io/v1beta1",
+    "metadata": {},
+    "items": [
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-5fltg",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "150934m",
+            "selector": null
+        },
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-5hj5m",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "74199m",
+            "selector": null
+        },
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-bxxxd",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "29735m",
+            "selector": null
+        },
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-lwwx9",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "2927m",
+            "selector": null
+        },
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-m9grd",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "47342m",
+            "selector": null
+        },
+        {
+            "describedObject": {
+                "kind": "Pod",
+                "namespace": "default",
+                "name": "scaletestapp-55684d9dbb-n4lq5",
+                "apiVersion": "/v1"
+            },
+            "metricName": "http_requests_per_second",
+            "timestamp": "2026-11-17T21:10:57Z",
+            "value": "14561m",
+            "selector": null
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+# Нужен только сервер Prometheus: метрики приложения он забирает по аннотациям prometheus.io/* на подах
+# (стандартное задание kubernetes-pods в чарте). Остальные компоненты чарта для задачи не нужны.
+alertmanager:
+  enabled: false
+prometheus-pushgateway:
+  enabled: false
+kube-state-metrics:
+  enabled: false
+prometheus-node-exporter:
+  enabled: false
+configmapReload:
+  prometheus:
+    # Перезагрузка конфига на лету в задаче не нужна.
+    enabled: false
+server:
+  global:
+    scrape_interval: 15s
+  persistentVolume:
+    enabled: false

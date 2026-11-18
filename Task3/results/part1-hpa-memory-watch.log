@@ -1,0 +1,381 @@
+=== 2026-11-17 23:45:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     57s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   0m    8Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     60s
+=== 2026-11-17 23:45:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     66s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    8Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     69s
+=== 2026-11-17 23:45:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 28%/80%   1     10    1     76s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    8Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     79s
+=== 2026-11-17 23:45:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 28%/80%   1     10    1     86s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    8Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     89s
+=== 2026-11-17 23:46:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 28%/80%   1     10    1     96s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    10Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     99s
+=== 2026-11-17 23:46:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 35%/80%   1     10    1     106s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    10Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     110s
+=== 2026-11-17 23:46:21 MSK
+scaletestapp   Deployment/scaletestapp   memory: 35%/80%   1     10    1     117s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   4m    11Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m
+=== 2026-11-17 23:46:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 37%/80%   1     10    1     2m6s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   6m    11Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m9s
+=== 2026-11-17 23:46:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 39%/80%   1     10    1     2m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   6m    11Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m19s
+=== 2026-11-17 23:46:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 39%/80%   1     10    1     2m26s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   17m   12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m29s
+=== 2026-11-17 23:47:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 41%/80%   1     10    1     2m36s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   11m   13Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m40s
+=== 2026-11-17 23:47:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 45%/80%   1     10    1     2m47s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   41m   14Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m50s
+=== 2026-11-17 23:47:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 45%/80%   1     10    1     2m56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   41m   14Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     2m59s
+=== 2026-11-17 23:47:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 49%/80%   1     10    1     3m6s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   14m   15Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m9s
+=== 2026-11-17 23:47:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 52%/80%   1     10    1     3m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   14m   15Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m19s
+=== 2026-11-17 23:47:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 52%/80%   1     10    1     3m27s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   17m   16Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m30s
+=== 2026-11-17 23:48:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 54%/80%   1     10    1     3m36s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   17m   16Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m39s
+=== 2026-11-17 23:48:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 54%/80%   1     10    1     3m46s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   17m   16Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m49s
+=== 2026-11-17 23:48:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 54%/80%   1     10    1     3m56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   19m   17Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     3m59s
+=== 2026-11-17 23:48:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 58%/80%   1     10    1     4m7s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   21m   18Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m10s
+=== 2026-11-17 23:48:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 62%/80%   1     10    1     4m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   21m   18Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m19s
+=== 2026-11-17 23:48:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 62%/80%   1     10    1     4m26s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   23m   18Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m29s
+=== 2026-11-17 23:49:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 63%/80%   1     10    1     4m36s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   32m   19Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m39s
+=== 2026-11-17 23:49:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 65%/80%   1     10    1     4m46s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   24m   21Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m50s
+=== 2026-11-17 23:49:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 65%/80%   1     10    1     4m56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   24m   21Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     4m59s
+=== 2026-11-17 23:49:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    1     5m6s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   37m   22Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m9s
+=== 2026-11-17 23:49:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 74%/80%   1     10    1     5m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   29m   22Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m19s
+=== 2026-11-17 23:49:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 74%/80%   1     10    1     5m26s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   29m   22Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m30s
+=== 2026-11-17 23:50:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 76%/80%   1     10    1     5m36s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   29m   24Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m39s
+=== 2026-11-17 23:50:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 82%/80%   1     10    1     5m46s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   29m   24Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m49s
+=== 2026-11-17 23:50:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 82%/80%   1     10    1     5m56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   27m   26Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     5m59s
+=== 2026-11-17 23:50:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 86%/80%   1     10    1     6m6s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   27m   26Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m9s
+=== 2026-11-17 23:50:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 86%/80%   1     10    1     6m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   26Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m20s
+=== 2026-11-17 23:50:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 86%/80%   1     10    1     6m27s
+scaletestapp   1/1   1     1     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   26Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m30s
+=== 2026-11-17 23:51:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 89%/80%   1     10    1     6m36s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   28Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m39s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     6s
+=== 2026-11-17 23:51:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 94%/80%   1     10    2     6m46s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   27m   28Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m49s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     16s
+=== 2026-11-17 23:51:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 94%/80%   1     10    2     6m56s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   27m   28Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     6m59s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     26s
+=== 2026-11-17 23:51:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 60%/80%   1     10    2     7m6s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    10Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     7m10s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     37s
+=== 2026-11-17 23:51:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 65%/80%   1     10    2     7m17s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    10Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     7m20s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     47s
+=== 2026-11-17 23:51:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 65%/80%   1     10    2     7m26s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    10Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     7m29s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     56s
+=== 2026-11-17 23:52:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 66%/80%   1     10    2     7m36s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   31m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   5m    12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     7m39s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     66s
+=== 2026-11-17 23:52:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    2     7m46s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   5m    12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   0     7m49s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0     76s
+=== 2026-11-17 23:52:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    2     7m56s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   29Mi   
+scaletestapp-6bb49f5b5f-wpmp2   5m    12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (4s ago)   8m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0            87s
+=== 2026-11-17 23:52:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    2     8m6s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-wpmp2   16m   18Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (13s ago)   8m9s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             96s
+=== 2026-11-17 23:52:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 62%/80%   1     10    2     8m16s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   21m   12Mi   
+scaletestapp-6bb49f5b5f-wpmp2   29m   20Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (23s ago)   8m19s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             106s
+=== 2026-11-17 23:52:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 62%/80%   1     10    2     8m26s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   21m   12Mi   
+scaletestapp-6bb49f5b5f-wpmp2   29m   20Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (33s ago)   8m29s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             116s
+=== 2026-11-17 23:53:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 55%/80%   1     10    2     8m36s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   13m   15Mi   
+scaletestapp-6bb49f5b5f-wpmp2   25m   26Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (43s ago)   8m39s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m6s
+=== 2026-11-17 23:53:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 69%/80%   1     10    2     8m46s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   13m   16Mi   
+scaletestapp-6bb49f5b5f-wpmp2   30m   27Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (54s ago)   8m50s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m17s
+=== 2026-11-17 23:53:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 69%/80%   1     10    2     8m56s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   13m   16Mi   
+scaletestapp-6bb49f5b5f-wpmp2   30m   27Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (63s ago)   8m59s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m26s
+=== 2026-11-17 23:53:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 73%/80%   1     10    2     9m6s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   20m   17Mi   
+scaletestapp-6bb49f5b5f-wpmp2   30m   27Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (73s ago)   9m9s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m36s
+=== 2026-11-17 23:53:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 75%/80%   1     10    2     9m16s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   20m   17Mi   
+scaletestapp-6bb49f5b5f-wpmp2   28m   28Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (83s ago)   9m19s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m46s
+=== 2026-11-17 23:53:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 75%/80%   1     10    2     9m26s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   20m   17Mi   
+scaletestapp-6bb49f5b5f-wpmp2   28m   28Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (93s ago)   9m29s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   0             2m56s
+=== 2026-11-17 23:54:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 77%/80%   1     10    2     9m36s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   16m   18Mi   
+scaletestapp-6bb49f5b5f-wpmp2   43m   29Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (104s ago)   9m40s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   1 (3s ago)     3m7s
+=== 2026-11-17 23:54:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 80%/80%   1     10    2     9m46s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   23Mi   
+scaletestapp-6bb49f5b5f-wpmp2   20m   12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (113s ago)   9m49s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   1 (12s ago)    3m16s
+=== 2026-11-17 23:54:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 80%/80%   1     10    2     9m56s
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   28m   23Mi   
+scaletestapp-6bb49f5b5f-wpmp2   20m   12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   1 (2m3s ago)   9m59s
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   1 (22s ago)    3m26s
+=== 2026-11-17 23:54:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 60%/80%   1     10    2     10m
+scaletestapp   1/2   2     1     8d
+scaletestapp-6bb49f5b5f-wpmp2   10m   12Mi   
+scaletestapp-6bb49f5b5f-vq6cl   0/1   OOMKilled   1 (2m14s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running     1 (33s ago)     3m37s
+=== 2026-11-17 23:54:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 41%/80%   1     10    2     10m
+scaletestapp   1/2   2     1     8d
+scaletestapp-6bb49f5b5f-wpmp2   106m   27Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running     2 (20s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   0/1   OOMKilled   1 (42s ago)   3m46s
+=== 2026-11-17 23:54:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 41%/80%   1     10    2     10m
+scaletestapp   1/2   2     1     8d
+scaletestapp-6bb49f5b5f-wpmp2   106m   27Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running     2 (30s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   0/1   OOMKilled   1 (52s ago)   3m56s
+=== 2026-11-17 23:55:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 92%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   45m   21Mi   
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (40s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (21s ago)   4m6s
+=== 2026-11-17 23:55:11 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    21Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (51s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (32s ago)   4m17s
+=== 2026-11-17 23:55:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 70%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    21Mi   
+scaletestapp-6bb49f5b5f-wpmp2   4m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (60s ago)   10m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (41s ago)   4m26s
+=== 2026-11-17 23:55:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 47%/80%   1     10    2     11m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    22Mi   
+scaletestapp-6bb49f5b5f-wpmp2   0m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (70s ago)   11m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (51s ago)   4m36s
+=== 2026-11-17 23:55:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 49%/80%   1     10    2     11m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   3m    23Mi   
+scaletestapp-6bb49f5b5f-wpmp2   0m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (80s ago)   11m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (61s ago)   4m46s
+=== 2026-11-17 23:55:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 49%/80%   1     10    2     11m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   3m    23Mi   
+scaletestapp-6bb49f5b5f-wpmp2   0m    7Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (90s ago)   11m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (71s ago)   4m56s
+=== 2026-11-17 23:56:01 MSK
+scaletestapp   Deployment/scaletestapp   memory: 50%/80%   1     10    2     11m
+scaletestapp   2/2   2     2     8d
+scaletestapp-6bb49f5b5f-vq6cl   1m    23Mi   
+scaletestapp-6bb49f5b5f-wpmp2   1m    8Mi    
+scaletestapp-6bb49f5b5f-vq6cl   1/1   Running   2 (101s ago)   11m
+scaletestapp-6bb49f5b5f-wpmp2   1/1   Running   2 (82s ago)    5m7s
