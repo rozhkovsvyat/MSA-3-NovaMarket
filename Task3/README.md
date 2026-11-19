@@ -6,7 +6,7 @@
 
 - Minikube 1.39.0, Kubernetes 1.37.0, отдельный профиль `novamarket` (драйвер docker, containerd, 4 CPU, 6 GiB), аддон metrics-server.
 - Prometheus — Helm-чарт `prometheus-community/prometheus` 29.46.0 (Prometheus 3.16.0), prometheus-adapter — чарт 5.4.0 (adapter 0.12.0).
-- Locust 2.47.0 на ноутбуке. Сервис типа NodePort открыт через `minikube service scaletestapp -p novamarket --url`, поэтому запросы идут через kube-proxy и распределяются по подам. С `kubectl port-forward` вся нагрузка ушла бы в один под.
+- Locust 2.47.0 на локальной машине. Сервис типа NodePort открыт через `minikube service scaletestapp -p novamarket --url`, поэтому запросы идут через kube-proxy и распределяются по подам. С `kubectl port-forward` вся нагрузка ушла бы в один под.
 
 ## Файлы
 
