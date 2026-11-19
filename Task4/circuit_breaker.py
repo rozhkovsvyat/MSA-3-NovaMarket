@@ -12,6 +12,8 @@ locust -f circuit_breaker.py --host=http://localhost:8080 --headless -u 1 -r 1 -
 
 import os
 import time
+from dataclasses import dataclass
+from typing import Optional
 
 from locust import HttpUser, constant, events, task
 
@@ -22,7 +24,18 @@ LOGISTICS_ADDRESS = "127.0.0.1:9090"
 if FAILURE_MODE not in ("slow", "error"):
     raise SystemExit(f"LOGISTICS_FAILURE must be slow or error, got {FAILURE_MODE!r}")
 
-run = {}
+
+@dataclass
+class RunState:
+    started_at: float = 0.0
+    failed_calls_before_open: int = 0
+    circuit_open: bool = False
+    opened_after: Optional[int] = None
+    probe_failed: bool = False
+    restored: bool = False
+
+
+state = RunState()
 
 
 def log(message):
@@ -31,15 +44,21 @@ def log(message):
 
 @events.test_start.add_listener
 def on_test_start(**_):
-    run.update(started_at=time.monotonic(), failures_in_row=0, circuit_open=False,
-               opened_after=None, restored=False)
+    state.started_at = time.monotonic()
+    state.failed_calls_before_open = 0
+    state.circuit_open = False
+    state.opened_after = None
+    state.probe_failed = False
+    state.restored = False
 
 
 @events.quitting.add_listener
 def on_quitting(environment, **_):
-    passed = run.get("opened_after") == 5 and run.get("restored")
-    log("Check passed: circuit opened after 5 failures, then calls were restored" if passed
-        else "Check failed: circuit did not open after 5 failures or calls were not restored")
+    passed = (state.opened_after == 5 and state.probe_failed and state.restored)
+    if passed:
+        log("Check passed: circuit opened after 5 failures, the probe failed, then calls were restored")
+    else:
+        log("Check failed: expected opening after 5 failures, a failed probe, and restored calls")
     environment.process_exit_code = 0 if passed else 1
 
 
@@ -57,7 +76,7 @@ class LogisticsClient(HttpUser):
 
     @task
     def tracking(self):
-        broken = time.monotonic() - run["started_at"] < BROKEN_SECONDS
+        broken = time.monotonic() - state.started_at < BROKEN_SECONDS
         path = f"/logistics/{FAILURE_MODE}" if broken else "/logistics/fast"
         name = "logistics broken" if broken else "logistics ok"
 
@@ -67,22 +86,25 @@ class LogisticsClient(HttpUser):
 
             if response.status_code == 200 and called_logistics and not broken:
                 response.success()
-                run["failures_in_row"] = 0
-                if run["circuit_open"]:
-                    run.update(circuit_open=False, restored=True)
+                if state.circuit_open and state.probe_failed:
+                    state.circuit_open = False
+                    state.restored = True
                     log("Logistics answers again: Circuit Breaker closed, calls restored")
             elif is_fallback(response) and called_logistics:
-                run["failures_in_row"] += 1
                 response.failure(f"logistics failed, fallback after {seconds:.1f} s")
-                if run["circuit_open"]:
+                if state.circuit_open:
+                    state.probe_failed = True
                     log("Probe call after the pause failed: Circuit Breaker stays open")
                 else:
-                    log(f"Logistics call failed ({run['failures_in_row']}), fallback after {seconds:.1f} s")
+                    state.failed_calls_before_open += 1
+                    log(f"Logistics call failed ({state.failed_calls_before_open}), "
+                        f"fallback after {seconds:.1f} s")
             elif is_fallback(response):
                 response.failure("circuit open: fallback without calling logistics")
-                if not run["circuit_open"]:
-                    run.update(circuit_open=True, opened_after=run["failures_in_row"])
-                    log(f"Circuit Breaker activated after {run['failures_in_row']} failed calls: "
+                if not state.circuit_open:
+                    state.circuit_open = True
+                    state.opened_after = state.failed_calls_before_open
+                    log(f"Circuit Breaker activated after {state.failed_calls_before_open} failed calls: "
                         f"fallback in {seconds * 1000:.0f} ms without calling logistics")
             else:
                 response.failure(f"unexpected response {response.status_code}")
