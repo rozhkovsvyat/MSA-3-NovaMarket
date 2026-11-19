@@ -1,0 +1,23 @@
+# captured 2026-11-17 23:32:34 MSK
+# kubectl get events --sort-by=.lastTimestamp
+LAST SEEN   TYPE      REASON                         OBJECT                                 MESSAGE
+8m46s       Normal    SuccessfulCreate               replicaset/scaletestapp-68648cd99      Created pod: scaletestapp-68648cd99-c9whh
+8m46s       Normal    Scheduled                      pod/scaletestapp-68648cd99-c9whh       Successfully assigned default/scaletestapp-68648cd99-c9whh to novamarket
+8m46s       Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-68648cd99 from 0 to 1
+8m45s       Normal    SuccessfulDelete               replicaset/scaletestapp-68cd49478c     Deleted pod: scaletestapp-68cd49478c-7dkbs
+8m45s       Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled down replica set scaletestapp-68cd49478c from 1 to 0
+8m45s       Normal    Killing                        pod/scaletestapp-68cd49478c-7dkbs      Stopping container app
+5m56s       Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-68648cd99 from 1 to 2
+5m56s       Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason: memory resource utilization (percentage of request) above target
+5m56s       Normal    SuccessfulCreate               replicaset/scaletestapp-68648cd99      Created pod: scaletestapp-68648cd99-bqfx9
+5m56s       Normal    Scheduled                      pod/scaletestapp-68648cd99-bqfx9       Successfully assigned default/scaletestapp-68648cd99-bqfx9 to novamarket
+2m43s       Normal    Started                        pod/scaletestapp-68648cd99-c9whh       Container started
+2m43s       Normal    Pulled                         pod/scaletestapp-68648cd99-c9whh       Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+2m43s       Normal    Created                        pod/scaletestapp-68648cd99-c9whh       Container created
+2m41s       Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+2m41s       Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+110s        Normal    Created                        pod/scaletestapp-68648cd99-bqfx9       Container created
+110s        Normal    Pulled                         pod/scaletestapp-68648cd99-bqfx9       Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+110s        Normal    Started                        pod/scaletestapp-68648cd99-bqfx9       Container started
+61s         Warning   BackOff                        pod/scaletestapp-68648cd99-c9whh       Back-off restarting failed container app in pod scaletestapp-68648cd99-c9whh_default(efa32750-54cd-4da8-841e-3b49ac35cfd1)
+27s         Warning   BackOff                        pod/scaletestapp-68648cd99-bqfx9       Back-off restarting failed container app in pod scaletestapp-68648cd99-bqfx9_default(d0c0fbc8-f8e6-4878-ac7f-7e721f1b5958)

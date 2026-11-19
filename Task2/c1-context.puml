@@ -1,0 +1,32 @@
+@startuml
+!include <C4/C4_Context>
+LAYOUT_LEFT_RIGHT()
+skinparam defaultFontName Arial
+skinparam dpi 110
+show stereotype
+
+title NovaMarket — контекст системы (C1)
+
+Person(buyer, "Покупатель", "Заказывает товары,\nсмотрит историю покупок")
+Person(seller, "Продавец", "Размещает товары,\nобрабатывает заказы")
+Person(support, "Поддержка", "Разбирает отправления\nи возвраты")
+System(nova, "NovaMarket", "Маркетплейс: каталог, корзина, заказы,\nоплата, доставка, история покупок")
+System_Ext(pay, "Платёжный шлюз", "Платёжная страница, списания,\nвозвраты, фискальные чеки")
+System_Ext(logistics, "Логистический провайдер", "Доставка заказов")
+System_Ext(push, "Провайдеры уведомлений", "Push, email")
+System_Ext(idp, "Keycloak", "Вход покупателей, продавцов\nи поддержки (OIDC)")
+
+Rel(buyer, nova, "Заказывает, смотрит историю", "Мобильное приложение")
+Rel(seller, nova, "Ведёт товары и заказы", "Веб-кабинет")
+Rel(support, nova, "Разбирает отправления", "Веб-кабинет")
+Rel(buyer, pay, "Оплачивает")
+Rel(nova, pay, "Платежи и возвраты", "HTTPS")
+Rel(pay, nova, "Результат оплаты", "Webhook")
+Rel(nova, logistics, "Заявки на доставку", "HTTPS")
+Rel(logistics, nova, "Статусы доставки", "Webhook")
+Rel(nova, push, "Уведомления", "HTTPS")
+Rel(buyer, idp, "Входит", "OIDC")
+Rel(seller, idp, "Входит", "OIDC")
+Rel(support, idp, "Входит", "OIDC")
+Rel(nova, idp, "Проверяет токены", "JWKS")
+@enduml

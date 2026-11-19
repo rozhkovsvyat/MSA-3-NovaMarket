@@ -1,0 +1,55 @@
+@startuml
+title Оформление заказа: ошибки до оплаты
+skinparam defaultFontName Arial
+skinparam dpi 110
+autonumber
+
+participant "Мобильное\nприложение" as app
+participant "Заказы" as orders
+queue "Kafka" as kafka
+participant "Склад" as inventory
+participant "Платежи" as payments
+participant "Платёжный\nшлюз" as pg
+participant "Приём\nвебхуков" as hooks
+participant "Уведомления" as notif
+
+note across : Обозначения и упрощения — как в успешном сценарии: запросы приложения идут через API Gateway и BFF мобильного приложения, вебхуки — через сервис приёма вебхуков, вызовы шлюза — через прокси.
+
+app -> orders : POST /orders
+orders ->> kafka : OrderCreated + снимок заказа
+kafka ->> inventory : OrderCreated
+alt Товара не хватает
+  inventory ->> kafka : StockReservationFailed
+  kafka ->> orders : StockReservationFailed
+else Товар зарезервирован на 20 минут
+  inventory ->> kafka : StockReserved
+  kafka ->> payments : StockReserved
+  payments -> pg : Создаёт платёж
+  alt Оплата отклонена
+    pg -> hooks : Вебхук: отклонено
+    hooks ->> kafka : PaymentGatewayWebhookReceived
+    kafka ->> payments : PaymentGatewayWebhookReceived
+    payments ->> kafka : PaymentFailed
+  else Покупатель не оплатил за 15 минут
+    payments -> pg : Проверяет статус и отменяет платёж
+    payments ->> kafka : PaymentTimedOut
+  end
+  group PaymentFailed / PaymentTimedOut читают склад и заказы
+    kafka ->> inventory : PaymentFailed / PaymentTimedOut
+    inventory -> inventory : Снимает резерв
+    inventory ->> kafka : StockReleased
+    kafka ->> orders : PaymentFailed / PaymentTimedOut,\nзатем StockReleased
+  end
+else Платежи не ответили до срока резерва
+  inventory -> inventory : Истёк срок резерва,\nрезерв снят
+  inventory ->> kafka : StockReservationExpired
+  kafka ->> payments : StockReservationExpired
+  payments -> pg : Проверяет статус и отменяет платёж
+  kafka ->> orders : StockReservationExpired
+end
+note right of payments : Если шлюз подтвердит оплату\nпосле отмены, платежи сразу\nвозвращают деньги (RefundSucceeded)
+orders -> orders : «Отменён», причина
+orders ->> kafka : OrderCancelled
+kafka ->> notif : OrderCancelled
+notif -> notif : Покупателю: заказ отменён и почему
+@enduml

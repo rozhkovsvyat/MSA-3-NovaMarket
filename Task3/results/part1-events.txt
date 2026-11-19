@@ -1,0 +1,90 @@
+# captured 2026-11-17 23:56:03 MSK
+# kubectl get events --sort-by=.lastTimestamp
+LAST SEEN   TYPE      REASON                         OBJECT                                 MESSAGE
+32m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-68648cd99 from 0 to 1
+32m         Normal    Scheduled                      pod/scaletestapp-68648cd99-c9whh       Successfully assigned default/scaletestapp-68648cd99-c9whh to novamarket
+32m         Normal    SuccessfulCreate               replicaset/scaletestapp-68648cd99      Created pod: scaletestapp-68648cd99-c9whh
+32m         Normal    Killing                        pod/scaletestapp-68cd49478c-7dkbs      Stopping container app
+32m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled down replica set scaletestapp-68cd49478c from 1 to 0
+32m         Normal    SuccessfulDelete               replicaset/scaletestapp-68cd49478c     Deleted pod: scaletestapp-68cd49478c-7dkbs
+29m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason: memory resource utilization (percentage of request) above target
+29m         Normal    SuccessfulCreate               replicaset/scaletestapp-68648cd99      Created pod: scaletestapp-68648cd99-bqfx9
+29m         Normal    Scheduled                      pod/scaletestapp-68648cd99-bqfx9       Successfully assigned default/scaletestapp-68648cd99-bqfx9 to novamarket
+26m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+26m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+23m         Warning   BackOff                        pod/scaletestapp-68648cd99-c9whh       Back-off restarting failed container app in pod scaletestapp-68648cd99-c9whh_default(efa32750-54cd-4da8-841e-3b49ac35cfd1)
+23m         Normal    Started                        pod/scaletestapp-68648cd99-c9whh       Container started
+23m         Normal    Created                        pod/scaletestapp-68648cd99-c9whh       Container created
+23m         Normal    Pulled                         pod/scaletestapp-68648cd99-c9whh       Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+22m         Warning   BackOff                        pod/scaletestapp-68648cd99-bqfx9       Back-off restarting failed container app in pod scaletestapp-68648cd99-bqfx9_default(d0c0fbc8-f8e6-4878-ac7f-7e721f1b5958)
+22m         Normal    Created                        pod/scaletestapp-68648cd99-bqfx9       Container created
+22m         Normal    Pulled                         pod/scaletestapp-68648cd99-bqfx9       Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+22m         Normal    Started                        pod/scaletestapp-68648cd99-bqfx9       Container started
+21m         Normal    SuccessfulDelete               replicaset/scaletestapp-68648cd99      Deleted pod: scaletestapp-68648cd99-wmkbb
+21m         Normal    Created                        pod/scaletestapp-68648cd99-wmkbb       Container created
+21m         Normal    Killing                        pod/scaletestapp-68648cd99-bqfx9       Stopping container app
+21m         Normal    SuccessfulCreate               replicaset/scaletestapp-56bbc9bc59     Created pod: scaletestapp-56bbc9bc59-x6tv2
+21m         Normal    SuccessfulCreate               replicaset/scaletestapp-56bbc9bc59     Created pod: scaletestapp-56bbc9bc59-qpd28
+21m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled down replica set scaletestapp-68648cd99 from 2 to 1
+21m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason:
+21m         Normal    Scheduled                      pod/scaletestapp-68648cd99-wmkbb       Successfully assigned default/scaletestapp-68648cd99-wmkbb to novamarket
+21m         Normal    Pulled                         pod/scaletestapp-68648cd99-wmkbb       Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+21m         Normal    Created                        pod/scaletestapp-56bbc9bc59-qpd28      Container created
+21m         Normal    Started                        pod/scaletestapp-68648cd99-wmkbb       Container started
+21m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-56bbc9bc59 from 0 to 1
+21m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-56bbc9bc59 from 1 to 2
+21m         Normal    Scheduled                      pod/scaletestapp-56bbc9bc59-qpd28      Successfully assigned default/scaletestapp-56bbc9bc59-qpd28 to novamarket
+21m         Normal    SuccessfulDelete               replicaset/scaletestapp-68648cd99      Deleted pod: scaletestapp-68648cd99-bqfx9
+21m         Normal    SuccessfulCreate               replicaset/scaletestapp-68648cd99      Created pod: scaletestapp-68648cd99-wmkbb
+21m         Normal    Pulled                         pod/scaletestapp-56bbc9bc59-qpd28      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+21m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-68648cd99 from 1 to 2
+21m         Normal    Started                        pod/scaletestapp-56bbc9bc59-qpd28      Container started
+21m         Normal    Scheduled                      pod/scaletestapp-56bbc9bc59-x6tv2      Successfully assigned default/scaletestapp-56bbc9bc59-x6tv2 to novamarket
+21m         Normal    SuccessfulDelete               replicaset/scaletestapp-68648cd99      Deleted pod: scaletestapp-68648cd99-c9whh
+21m         Normal    Killing                        pod/scaletestapp-68648cd99-c9whh       Stopping container app
+21m         Normal    Created                        pod/scaletestapp-56bbc9bc59-x6tv2      Container created
+21m         Normal    Pulled                         pod/scaletestapp-56bbc9bc59-x6tv2      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+21m         Normal    Killing                        pod/scaletestapp-68648cd99-wmkbb       Stopping container app
+21m         Normal    Started                        pod/scaletestapp-56bbc9bc59-x6tv2      Container started
+21m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled down replica set scaletestapp-68648cd99 from 1 to 0
+21m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+21m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+17m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled down replica set scaletestapp-56bbc9bc59 from 2 to 1
+17m         Normal    ScalingReplicaSet              deployment/scaletestapp                Scaled up replica set scaletestapp-76775c44fd from 0 to 1
+17m         Normal    Killing                        pod/scaletestapp-56bbc9bc59-x6tv2      Stopping container app
+17m         Normal    Scheduled                      pod/scaletestapp-76775c44fd-7lxxv      Successfully assigned default/scaletestapp-76775c44fd-7lxxv to novamarket
+17m         Normal    SuccessfulCreate               replicaset/scaletestapp-76775c44fd     Created pod: scaletestapp-76775c44fd-7lxxv
+17m         Normal    SuccessfulDelete               replicaset/scaletestapp-56bbc9bc59     Deleted pod: scaletestapp-56bbc9bc59-x6tv2
+17m         Normal    Created                        pod/scaletestapp-76775c44fd-7lxxv      Container created
+17m         Normal    Started                        pod/scaletestapp-76775c44fd-7lxxv      Container started
+17m         Normal    Killing                        pod/scaletestapp-56bbc9bc59-qpd28      Stopping container app
+17m         Normal    Pulled                         pod/scaletestapp-76775c44fd-7lxxv      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+17m         Normal    SuccessfulDelete               replicaset/scaletestapp-56bbc9bc59     Deleted pod: scaletestapp-56bbc9bc59-qpd28
+16m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+16m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+16m         Normal    Scheduled                      pod/scaletestapp-76775c44fd-fg6wb      Successfully assigned default/scaletestapp-76775c44fd-fg6wb to novamarket
+16m         Normal    SuccessfulCreate               replicaset/scaletestapp-76775c44fd     Created pod: scaletestapp-76775c44fd-fg6wb
+16m         Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason:
+16m         Normal    Pulled                         pod/scaletestapp-76775c44fd-fg6wb      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+16m         Normal    Created                        pod/scaletestapp-76775c44fd-fg6wb      Container created
+16m         Normal    Started                        pod/scaletestapp-76775c44fd-fg6wb      Container started
+16m         Normal    SuccessfulDelete               replicaset/scaletestapp-76775c44fd     Deleted pod: scaletestapp-76775c44fd-7lxxv
+16m         Normal    Killing                        pod/scaletestapp-76775c44fd-7lxxv      Stopping container app
+11m         Normal    SuccessfulDelete               replicaset/scaletestapp-76775c44fd     Deleted pod: scaletestapp-76775c44fd-fg6wb
+11m         Normal    Killing                        pod/scaletestapp-76775c44fd-fg6wb      Stopping container app
+11m         Normal    SuccessfulCreate               replicaset/scaletestapp-6bb49f5b5f     Created pod: scaletestapp-6bb49f5b5f-vq6cl
+11m         Normal    Scheduled                      pod/scaletestapp-6bb49f5b5f-vq6cl      Successfully assigned default/scaletestapp-6bb49f5b5f-vq6cl to novamarket
+11m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/scaletestapp   invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+11m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/scaletestapp   failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+5m10s       Normal    ScalingReplicaSet              deployment/scaletestapp                (combined from similar events): Scaled up replica set scaletestapp-6bb49f5b5f from 1 to 2
+5m10s       Normal    SuccessfulCreate               replicaset/scaletestapp-6bb49f5b5f     Created pod: scaletestapp-6bb49f5b5f-wpmp2
+5m10s       Normal    SuccessfulRescale              horizontalpodautoscaler/scaletestapp   New size: 2; reason: memory resource utilization (percentage of request) above target
+5m10s       Normal    Scheduled                      pod/scaletestapp-6bb49f5b5f-wpmp2      Successfully assigned default/scaletestapp-6bb49f5b5f-wpmp2 to novamarket
+103s        Warning   BackOff                        pod/scaletestapp-6bb49f5b5f-vq6cl      Back-off restarting failed container app in pod scaletestapp-6bb49f5b5f-vq6cl_default(74389c55-2855-4639-8104-68f658a1b4f2)
+92s         Normal    Started                        pod/scaletestapp-6bb49f5b5f-vq6cl      Container started
+92s         Normal    Created                        pod/scaletestapp-6bb49f5b5f-vq6cl      Container created
+92s         Normal    Pulled                         pod/scaletestapp-6bb49f5b5f-vq6cl      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+84s         Warning   BackOff                        pod/scaletestapp-6bb49f5b5f-wpmp2      Back-off restarting failed container app in pod scaletestapp-6bb49f5b5f-wpmp2_default(56ef730a-906a-4432-8922-e4a3d44e2d25)
+72s         Normal    Pulled                         pod/scaletestapp-6bb49f5b5f-wpmp2      Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+72s         Normal    Created                        pod/scaletestapp-6bb49f5b5f-wpmp2      Container created
+72s         Normal    Started                        pod/scaletestapp-6bb49f5b5f-wpmp2      Container started

@@ -1,0 +1,300 @@
+=== 2026-11-17 23:24:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     52s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     52s
+=== 2026-11-17 23:24:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     62s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     62s
+=== 2026-11-17 23:25:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     72s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     73s
+=== 2026-11-17 23:25:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     82s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     82s
+=== 2026-11-17 23:25:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     92s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     92s
+=== 2026-11-17 23:25:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 27%/80%   1     10    1     102s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   5m    8Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     103s
+=== 2026-11-17 23:25:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     112s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     112s
+=== 2026-11-17 23:25:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     2m2s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   0     2m2s
+=== 2026-11-17 23:26:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     2m12s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   1 (3s ago)   2m12s
+=== 2026-11-17 23:26:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     2m23s
+scaletestapp   0/1   1     0     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   1 (14s ago)   2m23s
+=== 2026-11-17 23:26:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     2m32s
+scaletestapp   0/1   1     0     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   1 (23s ago)   2m32s
+=== 2026-11-17 23:26:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 53%/80%   1     10    1     2m42s
+scaletestapp   1/1   1     1     8d
+scaletestapp-68648cd99-c9whh   8m    16Mi   
+scaletestapp-68648cd99-c9whh   1/1   Running   2 (20s ago)   2m42s
+=== 2026-11-17 23:26:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    1     2m52s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running     0             2s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   2 (30s ago)   2m52s
+=== 2026-11-17 23:26:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    1     3m2s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running     0             13s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   2 (41s ago)   3m3s
+=== 2026-11-17 23:27:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    2     3m12s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running     1 (9s ago)    22s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   2 (50s ago)   3m12s
+=== 2026-11-17 23:27:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    2     3m22s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   1 (19s ago)   32s
+scaletestapp-68648cd99-c9whh   1/1   Running     3 (33s ago)   3m22s
+=== 2026-11-17 23:27:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    2     3m32s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   1 (14s ago)   42s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled          3 (43s ago)   3m32s
+=== 2026-11-17 23:27:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: 95%/80%   1     10    2     3m43s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   53m   28Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running     2 (25s ago)   53s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   3 (54s ago)   3m43s
+=== 2026-11-17 23:27:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     3m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   2 (34s ago)   62s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   3 (63s ago)   3m52s
+=== 2026-11-17 23:27:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m2s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   2 (45s ago)   73s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   3 (74s ago)   4m3s
+=== 2026-11-17 23:28:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m13s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   1/1   Running     3 (28s ago)   83s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   3 (84s ago)   4m13s
+=== 2026-11-17 23:28:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m22s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   1/1   Running     3 (38s ago)   93s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   3 (94s ago)   4m23s
+=== 2026-11-17 23:28:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m32s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   3 (47s ago)   102s
+scaletestapp-68648cd99-c9whh   1/1   Running     4 (62s ago)   4m32s
+=== 2026-11-17 23:28:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m42s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   3 (57s ago)   112s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (72s ago)   4m42s
+=== 2026-11-17 23:28:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     4m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   3 (68s ago)   2m3s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (83s ago)   4m53s
+=== 2026-11-17 23:28:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m2s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   3 (77s ago)   2m12s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (92s ago)   5m2s
+=== 2026-11-17 23:29:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m12s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   3 (87s ago)    2m22s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (102s ago)   5m12s
+=== 2026-11-17 23:29:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m22s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   1/1   Running     4 (58s ago)    2m32s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (112s ago)   5m22s
+=== 2026-11-17 23:29:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m32s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   1/1   Running     4 (68s ago)    2m42s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (2m2s ago)   5m32s
+=== 2026-11-17 23:29:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m43s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   4 (79s ago)     2m53s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   4 (2m13s ago)   5m43s
+=== 2026-11-17 23:29:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     5m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled          4 (88s ago)   3m2s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   4 (76s ago)   5m52s
+=== 2026-11-17 23:29:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m2s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled          4 (98s ago)   3m12s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   4 (86s ago)   6m2s
+=== 2026-11-17 23:30:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m12s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   4 (108s ago)   3m22s
+scaletestapp-68648cd99-c9whh   1/1   Running     5 (96s ago)    6m12s
+=== 2026-11-17 23:30:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m22s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   4 (118s ago)   3m32s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (106s ago)   6m22s
+=== 2026-11-17 23:30:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m32s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   4 (2m9s ago)   3m43s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (117s ago)   6m33s
+=== 2026-11-17 23:30:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m42s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   4 (70s ago)    3m52s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled          5 (2m6s ago)   6m42s
+=== 2026-11-17 23:30:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     6m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   4 (80s ago)     4m2s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled          5 (2m16s ago)   6m52s
+=== 2026-11-17 23:30:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m2s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   1/1   Running     5 (90s ago)     4m12s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (2m26s ago)   7m2s
+=== 2026-11-17 23:31:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m12s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   5 (100s ago)    4m22s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (2m36s ago)   7m12s
+=== 2026-11-17 23:31:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m22s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   5 (111s ago)    4m33s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (2m47s ago)   7m23s
+=== 2026-11-17 23:31:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m32s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   5 (2m ago)      4m42s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (2m56s ago)   7m32s
+=== 2026-11-17 23:31:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m42s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled   5 (2m10s ago)   4m52s
+scaletestapp-68648cd99-c9whh   0/1   OOMKilled   5 (3m6s ago)    7m42s
+=== 2026-11-17 23:31:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     7m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled          5 (2m20s ago)   5m2s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (96s ago)     7m52s
+=== 2026-11-17 23:31:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m3s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled          5 (2m31s ago)   5m13s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (107s ago)    8m3s
+=== 2026-11-17 23:32:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m12s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   OOMKilled          5 (2m40s ago)   5m22s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (116s ago)    8m12s
+=== 2026-11-17 23:32:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m22s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (72s ago)    5m32s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (2m6s ago)   8m22s
+=== 2026-11-17 23:32:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m32s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (83s ago)     5m43s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (2m17s ago)   8m33s
+=== 2026-11-17 23:32:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m42s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (92s ago)     5m52s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (2m26s ago)   8m42s
+=== 2026-11-17 23:32:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     8m52s
+scaletestapp   0/2   2     0     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (102s ago)    6m2s
+scaletestapp-68648cd99-c9whh   0/1   CrashLoopBackOff   5 (2m36s ago)   8m52s
+=== 2026-11-17 23:32:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     9m2s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (112s ago)    6m12s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (2m46s ago)   9m2s
+=== 2026-11-17 23:33:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     9m12s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (2m2s ago)    6m22s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (2m56s ago)   9m12s
+=== 2026-11-17 23:33:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     9m22s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (2m12s ago)   6m32s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (3m6s ago)    9m22s
+=== 2026-11-17 23:33:20 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     9m32s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (2m23s ago)   6m43s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (3m17s ago)   9m33s
+=== 2026-11-17 23:33:30 MSK
+scaletestapp   Deployment/scaletestapp   memory: <unknown>/80%   1     10    2     9m42s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (2m32s ago)   6m52s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (3m26s ago)   9m42s
+=== 2026-11-17 23:33:40 MSK
+scaletestapp   Deployment/scaletestapp   memory: 26%/80%   1     10    2     9m52s
+scaletestapp   1/2   2     1     8d
+scaletestapp-68648cd99-c9whh   2m    8Mi   
+scaletestapp-68648cd99-bqfx9   0/1   CrashLoopBackOff   5 (2m42s ago)   7m2s
+scaletestapp-68648cd99-c9whh   1/1   Running            6 (3m36s ago)   9m52s
+=== 2026-11-17 23:33:50 MSK
+scaletestapp   Deployment/scaletestapp   memory: 26%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-68648cd99-c9whh   2m    8Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running   6 (2m52s ago)   7m12s
+scaletestapp-68648cd99-c9whh   1/1   Running   6 (3m46s ago)   10m
+=== 2026-11-17 23:34:00 MSK
+scaletestapp   Deployment/scaletestapp   memory: 26%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-68648cd99-c9whh   2m    8Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running   6 (3m3s ago)    7m23s
+scaletestapp-68648cd99-c9whh   1/1   Running   6 (3m57s ago)   10m
+=== 2026-11-17 23:34:10 MSK
+scaletestapp   Deployment/scaletestapp   memory: 26%/80%   1     10    2     10m
+scaletestapp   2/2   2     2     8d
+scaletestapp-68648cd99-c9whh   2m    8Mi   
+scaletestapp-68648cd99-bqfx9   1/1   Running   6 (3m12s ago)   7m32s
+scaletestapp-68648cd99-c9whh   1/1   Running   6 (4m6s ago)    10m

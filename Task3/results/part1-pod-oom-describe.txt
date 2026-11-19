@@ -1,0 +1,404 @@
+# Сводка: каждый перезапуск пода в части 1. Строки взяты из kubectl describe pod,
+# который снимался автоматически в течение 10 с после роста счётчика перезапусков.
+#
+# Первая попытка (--metric-resolution=60s, +20 пользователей в секунду, нагрузка 23:25:03-23:31:03):
+#   scaletestapp-68648cd99-c9whh  Restart Count: 1  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:25:57  (снято 2026-11-17 23:26:00 MSK)
+#   scaletestapp-68648cd99-c9whh  Restart Count: 2  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:26:10  (снято 2026-11-17 23:26:30 MSK)
+#   scaletestapp-68648cd99-c9whh  Restart Count: 3  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:26:37  (снято 2026-11-17 23:27:10 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 1  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:26:51  (снято 2026-11-17 23:27:00 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 2  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:27:06  (снято 2026-11-17 23:27:31 MSK)
+#   scaletestapp-68648cd99-c9whh  Restart Count: 4  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:27:18  (снято 2026-11-17 23:28:20 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 3  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:27:33  (снято 2026-11-17 23:28:01 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 4  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:28:12  (снято 2026-11-17 23:29:10 MSK)
+#   scaletestapp-68648cd99-c9whh  Restart Count: 5  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:28:24  (снято 2026-11-17 23:30:00 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 5  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:29:20  (снято 2026-11-17 23:30:50 MSK)
+#   scaletestapp-68648cd99-c9whh  Restart Count: 6  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:30:04  (снято 2026-11-17 23:32:50 MSK)
+#   scaletestapp-68648cd99-bqfx9  Restart Count: 6  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:30:58  (снято 2026-11-17 23:33:50 MSK)
+#
+# Вторая попытка (--metric-resolution=15s, +2 пользователя в секунду, нагрузка 23:45:43-23:54:43):
+#   scaletestapp-6bb49f5b5f-vq6cl  Restart Count: 1  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:52:17  (снято 2026-11-17 23:52:21 MSK)
+#   scaletestapp-6bb49f5b5f-wpmp2  Restart Count: 1  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:53:58  (снято 2026-11-17 23:54:01 MSK)
+#   scaletestapp-6bb49f5b5f-vq6cl  Restart Count: 2  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:54:20  (снято 2026-11-17 23:54:40 MSK)
+#   scaletestapp-6bb49f5b5f-wpmp2  Restart Count: 2  Last State: Terminated, Reason: OOMKilled, Exit Code: 137, Finished: 23:54:39  (снято 2026-11-17 23:55:00 MSK)
+
+# ===== Первая попытка: первый перезапуск, describe снят через 3 с =====
+# captured 2026-11-17 23:26:00 MSK
+# kubectl describe pod scaletestapp-68648cd99-c9whh
+Name:             scaletestapp-68648cd99-c9whh
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:23:48 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=68648cd99
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:23:48+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.27
+IPs:
+  IP:           10.244.0.27
+Controlled By:  ReplicaSet/scaletestapp-68648cd99
+Containers:
+  app:
+    Container ID:   containerd://c5e8f1d2355649ad88a54de8e40ace1ad1c6dc06d31fb09a2dac5405d33f66da
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 17 Nov 2026 23:25:58 +0300
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:23:49 +0300
+      Finished:     Tue, 17 Nov 2026 23:25:57 +0300
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-z6lr2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-z6lr2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age                 From               Message
+  ----    ------     ----                ----               -------
+  Normal  Scheduled  2m12s               default-scheduler  Successfully assigned default/scaletestapp-68648cd99-c9whh to novamarket
+  Normal  Pulled     3s (x2 over 2m11s)  kubelet            spec.containers{app}: Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+  Normal  Created    3s (x2 over 2m11s)  kubelet            spec.containers{app}: Container created
+  Normal  Started    2s (x2 over 2m11s)  kubelet            spec.containers{app}: Container started
+
+# ===== Первая попытка: после конца нагрузки, оба пода в CrashLoopBackOff =====
+# captured 2026-11-17 23:32:34 MSK
+# kubectl describe pod (all scaletestapp pods)
+Name:             scaletestapp-68648cd99-bqfx9
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:26:38 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=68648cd99
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:23:48+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.28
+IPs:
+  IP:           10.244.0.28
+Controlled By:  ReplicaSet/scaletestapp-68648cd99
+Containers:
+  app:
+    Container ID:   containerd://5a5b95abe8e5a2586c7089522428c94447766cef8ed54530f9575c9eb82a3d17
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:30:44 +0300
+      Finished:     Tue, 17 Nov 2026 23:30:58 +0300
+    Ready:          False
+    Restart Count:  5
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-x8926 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-x8926:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             scaletestapp-68648cd99-c9whh
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:23:48 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=68648cd99
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:23:48+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.27
+IPs:
+  IP:           10.244.0.27
+Controlled By:  ReplicaSet/scaletestapp-68648cd99
+Containers:
+  app:
+    Container ID:   containerd://4f3716f984ff41c940cce4f949ec0fd6e2cd44172495c9b429e037ae20eaa934
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Waiting
+      Reason:       CrashLoopBackOff
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:29:51 +0300
+      Finished:     Tue, 17 Nov 2026 23:30:04 +0300
+    Ready:          False
+    Restart Count:  5
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-z6lr2 (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       False 
+  ContainersReady             False 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-z6lr2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+# ===== Вторая попытка: первый перезапуск первого пода, describe снят через 4 с =====
+# captured 2026-11-17 23:52:21 MSK
+# kubectl describe pod scaletestapp-6bb49f5b5f-vq6cl
+Name:             scaletestapp-6bb49f5b5f-vq6cl
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:44:21 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=6bb49f5b5f
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:44:21+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.35
+IPs:
+  IP:           10.244.0.35
+Controlled By:  ReplicaSet/scaletestapp-6bb49f5b5f
+Containers:
+  app:
+    Container ID:   containerd://5222b173fe00b13df517bf4429fca5f79e1a7df7df1f2e68d5387281267c2da2
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 17 Nov 2026 23:52:17 +0300
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:44:21 +0300
+      Finished:     Tue, 17 Nov 2026 23:52:17 +0300
+    Ready:          True
+    Restart Count:  1
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tg45r (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-tg45r:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age              From               Message
+  ----    ------     ----             ----               -------
+  Normal  Scheduled  8m               default-scheduler  Successfully assigned default/scaletestapp-6bb49f5b5f-vq6cl to novamarket
+  Normal  Pulled     4s (x2 over 8m)  kubelet            spec.containers{app}: Container image "ghcr.io/yandex-practicum/scaletestapp:latest" already present on machine and can be accessed by the pod
+  Normal  Created    4s (x2 over 8m)  kubelet            spec.containers{app}: Container created
+  Normal  Started    4s (x2 over 8m)  kubelet            spec.containers{app}: Container started
+
+# ===== Вторая попытка: после конца нагрузки, у обоих подов по 2 перезапуска =====
+# captured 2026-11-17 23:56:03 MSK
+# kubectl describe pods -l app=scaletestapp
+Name:             scaletestapp-6bb49f5b5f-vq6cl
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:44:21 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=6bb49f5b5f
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:44:21+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.35
+IPs:
+  IP:           10.244.0.35
+Controlled By:  ReplicaSet/scaletestapp-6bb49f5b5f
+Containers:
+  app:
+    Container ID:   containerd://023d4fa4bd2f7bf9e4e377e49a56cd336f393e946b9cbb2a63d58ed6c4f9777b
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 17 Nov 2026 23:54:32 +0300
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:52:17 +0300
+      Finished:     Tue, 17 Nov 2026 23:54:20 +0300
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tg45r (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-tg45r:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+
+
+Name:             scaletestapp-6bb49f5b5f-wpmp2
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             novamarket/192.168.58.2
+Start Time:       Tue, 17 Nov 2026 23:50:54 +0300
+Labels:           app=scaletestapp
+                  pod-template-hash=6bb49f5b5f
+Annotations:      kubectl.kubernetes.io/restartedAt: 2026-11-17T23:44:21+03:00
+                  prometheus.io/path: /metrics
+                  prometheus.io/port: 8080
+                  prometheus.io/scrape: true
+Status:           Running
+IP:               10.244.0.36
+IPs:
+  IP:           10.244.0.36
+Controlled By:  ReplicaSet/scaletestapp-6bb49f5b5f
+Containers:
+  app:
+    Container ID:   containerd://1421b25f0e0dc0c5b243e0020db72bceef286b36f8bdf8a455cb2ff7f9212d96
+    Image:          ghcr.io/yandex-practicum/scaletestapp:latest
+    Image ID:       sha256:46b0a0f3efa625f3ff69990ba30647fe54afddb7c004f3eb51dfbd7bbb0cd1c7
+    Port:           8080/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Tue, 17 Nov 2026 23:54:52 +0300
+    Last State:     Terminated
+      Reason:       OOMKilled
+      Exit Code:    137
+      Started:      Tue, 17 Nov 2026 23:53:59 +0300
+      Finished:     Tue, 17 Nov 2026 23:54:39 +0300
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      memory:  30Mi
+    Requests:
+      memory:     30Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-xv4st (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-xv4st:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s

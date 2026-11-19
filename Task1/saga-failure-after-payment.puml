@@ -1,0 +1,68 @@
+@startuml
+title Оформление заказа: сбой доставки после оплаты
+skinparam defaultFontName Arial
+skinparam dpi 110
+autonumber
+
+actor "Поддержка" as support
+participant "Заказы" as orders
+queue "Kafka" as kafka
+participant "Склад" as inventory
+participant "Платежи" as payments
+participant "Платёжный\nшлюз" as pg
+participant "Доставка" as delivery
+participant "Логистический\nпровайдер" as lp
+participant "Уведомления" as notif
+
+note across : Обозначения и упрощения — как в успешном сценарии: вызовы логистики и шлюза идут через прокси, поддержка работает через веб-кабинет.
+
+kafka ->> delivery : PaymentSucceeded
+note over orders : Заказ «Оплачен и готовится к отправке»,\nотправления «Ожидает заявки»
+loop Повторы с растущей паузой, пока заявку не приняли, логистика не отказала и не прошло 24 часа
+  delivery -> lp : Создаёт заявку по отправлению\n(ключ — номер отправления)
+  alt Логистика приняла заявку
+    lp --> delivery : Трек-номер
+    delivery ->> kafka : ShipmentCreated — дальше как в успешном сценарии
+  else Временный сбой
+    lp --> delivery : Тайм-аут 3 с, 5xx или быстрый\nfallback Circuit Breaker
+  else Окончательный отказ
+    lp --> delivery : Отказ, например адрес\nне обслуживается
+  end
+end
+alt Логистика окончательно отказала
+  delivery -> delivery : Отменяет отправление
+else Срок повторов истёк
+  delivery ->> kafka : ShipmentRequestTimedOut
+  kafka ->> orders : ShipmentRequestTimedOut
+  orders -> orders : Отправление — «Требует внимания»
+  support -> delivery : Отменяет отправление
+  note right of support : Или повторяет заявку, когда\nлогистика восстановится
+end
+delivery ->> kafka : ShipmentCancelled (отправление продавца, причина)
+group ShipmentCancelled читают склад, платежи и заказы
+  kafka ->> inventory : ShipmentCancelled
+  inventory -> inventory : Снимает резерв товаров\nэтого отправления
+  inventory ->> kafka : StockReleased
+  kafka ->> payments : ShipmentCancelled
+  payments -> pg : Возврат суммы отправления
+  alt Возврат прошёл
+    payments ->> kafka : RefundSucceeded
+  else Возврат не прошёл
+    payments ->> kafka : RefundFailed
+  end
+  kafka ->> orders : ShipmentCancelled
+  orders -> orders : Отправление — «Отменено»
+end
+alt Остались другие отправления
+  orders ->> kafka : OrderPartiallyCancelled
+  kafka ->> notif : OrderPartiallyCancelled
+  notif -> notif : Покупателю и продавцу:\nотправление отменено, деньги вернутся
+else Отменены все отправления
+  orders -> orders : Заказ — «Отменён»
+  orders ->> kafka : OrderCancelled
+  kafka ->> notif : OrderCancelled
+  notif -> notif : Покупателю и продавцу:\nзаказ отменён
+end
+kafka ->> orders : StockReleased, RefundSucceeded\nили RefundFailed
+orders -> orders : Отмечает снятие резерва и возврат;\nстатус не меняется, при RefundFailed\nзаказ передаётся поддержке
+@enduml

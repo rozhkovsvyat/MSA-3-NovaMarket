@@ -1,0 +1,1109 @@
+=== 2026-11-18 00:02:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     37s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   9m    7Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     41s
+=== 2026-11-18 00:02:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     46s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   1m    7Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     50s
+=== 2026-11-18 00:02:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   2m    10Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     60s
+=== 2026-11-18 00:02:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     66s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   2m    10Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     70s
+=== 2026-11-18 00:02:45 MSK
+scaletestapp   Deployment/scaletestapp   411m/50   1     10    1     76s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   1m    10Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     80s
+=== 2026-11-18 00:02:55 MSK
+scaletestapp   Deployment/scaletestapp   411m/50   1     10    1     87s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     91s
+=== 2026-11-18 00:03:05 MSK
+scaletestapp   Deployment/scaletestapp   3378m/50   1     10    1     96s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     100s
+=== 2026-11-18 00:03:15 MSK
+scaletestapp   Deployment/scaletestapp   9276m/50   1     10    1     106s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     110s
+=== 2026-11-18 00:03:25 MSK
+scaletestapp   Deployment/scaletestapp   9276m/50   1     10    1     116s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   13m   12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m
+=== 2026-11-18 00:03:35 MSK
+scaletestapp   Deployment/scaletestapp   18554m/50   1     10    1     2m7s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   13m   12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m11s
+=== 2026-11-18 00:03:45 MSK
+scaletestapp   Deployment/scaletestapp   29879m/50   1     10    1     2m16s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   20m   13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m20s
+=== 2026-11-18 00:03:55 MSK
+scaletestapp   Deployment/scaletestapp   29879m/50   1     10    1     2m26s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   13m   14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m30s
+=== 2026-11-18 00:04:05 MSK
+scaletestapp   Deployment/scaletestapp   40190m/50   1     10    1     2m36s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   13m   14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m40s
+=== 2026-11-18 00:04:15 MSK
+scaletestapp   Deployment/scaletestapp   49640m/50   1     10    1     2m47s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   15m   15Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     2m51s
+=== 2026-11-18 00:04:25 MSK
+scaletestapp   Deployment/scaletestapp   49640m/50   1     10    1     2m56s
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5fltg   16m   16Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m
+=== 2026-11-18 00:04:35 MSK
+scaletestapp   Deployment/scaletestapp   59528m/50   1     10    1     3m6s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   16m   16Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m10s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7s
+=== 2026-11-18 00:04:45 MSK
+scaletestapp   Deployment/scaletestapp   68825m/50   1     10    2     3m16s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   16m   16Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m21s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     18s
+=== 2026-11-18 00:04:55 MSK
+scaletestapp   Deployment/scaletestapp   68825m/50   1     10    2     3m27s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   25m   17Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m31s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     28s
+=== 2026-11-18 00:05:05 MSK
+scaletestapp   Deployment/scaletestapp   39754m/50   1     10    2     3m36s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   25m   17Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     37s
+=== 2026-11-18 00:05:15 MSK
+scaletestapp   Deployment/scaletestapp   44320m/50   1     10    2     3m46s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   20m   17Mi   
+scaletestapp-55684d9dbb-5hj5m   5m    9Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     3m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     47s
+=== 2026-11-18 00:05:25 MSK
+scaletestapp   Deployment/scaletestapp   44320m/50   1     10    2     3m56s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   21m   17Mi   
+scaletestapp-55684d9dbb-5hj5m   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     57s
+=== 2026-11-18 00:05:35 MSK
+scaletestapp   Deployment/scaletestapp   49064m/50   1     10    2     4m6s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   21m   18Mi   
+scaletestapp-55684d9dbb-5hj5m   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m11s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     68s
+=== 2026-11-18 00:05:45 MSK
+scaletestapp   Deployment/scaletestapp   54282m/50   1     10    2     4m17s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   21m   18Mi   
+scaletestapp-55684d9dbb-5hj5m   6m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m21s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     78s
+=== 2026-11-18 00:05:55 MSK
+scaletestapp   Deployment/scaletestapp   54282m/50   1     10    2     4m26s
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5fltg   23m   19Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m30s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     87s
+=== 2026-11-18 00:06:05 MSK
+scaletestapp   Deployment/scaletestapp   59392m/50   1     10    2     4m36s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   23m   19Mi   
+scaletestapp-55684d9dbb-5hj5m   9m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     97s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7s
+=== 2026-11-18 00:06:15 MSK
+scaletestapp   Deployment/scaletestapp   64166m/50   1     10    3     4m46s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   23m   19Mi   
+scaletestapp-55684d9dbb-5hj5m   9m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     4m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     107s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     17s
+=== 2026-11-18 00:06:25 MSK
+scaletestapp   Deployment/scaletestapp   64166m/50   1     10    3     4m57s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   22m   19Mi   
+scaletestapp-55684d9dbb-5hj5m   10m   12Mi   
+scaletestapp-55684d9dbb-m9grd   4m    7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m1s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     118s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     28s
+=== 2026-11-18 00:06:35 MSK
+scaletestapp   Deployment/scaletestapp   46283m/50   1     10    3     5m6s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   22m   19Mi   
+scaletestapp-55684d9dbb-5hj5m   10m   12Mi   
+scaletestapp-55684d9dbb-m9grd   4m    7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m10s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m7s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     37s
+=== 2026-11-18 00:06:45 MSK
+scaletestapp   Deployment/scaletestapp   49328m/50   1     10    3     5m16s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   28m   20Mi   
+scaletestapp-55684d9dbb-5hj5m   11m   12Mi   
+scaletestapp-55684d9dbb-m9grd   3m    8Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m20s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m17s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     47s
+=== 2026-11-18 00:06:55 MSK
+scaletestapp   Deployment/scaletestapp   49328m/50   1     10    3     5m26s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   22m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   10m   12Mi   
+scaletestapp-55684d9dbb-m9grd   5m    10Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m30s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m27s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     57s
+=== 2026-11-18 00:07:05 MSK
+scaletestapp   Deployment/scaletestapp   52690m/50   1     10    3     5m36s
+scaletestapp   3/3   3     3     8d
+scaletestapp-55684d9dbb-5fltg   25m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   11m   13Mi   
+scaletestapp-55684d9dbb-m9grd   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m37s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     67s
+=== 2026-11-18 00:07:15 MSK
+scaletestapp   Deployment/scaletestapp   55777m/50   1     10    3     5m47s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   25m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   11m   13Mi   
+scaletestapp-55684d9dbb-m9grd   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     5m51s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m48s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     78s
+=== 2026-11-18 00:07:25 MSK
+scaletestapp   Deployment/scaletestapp   55777m/50   1     10    3     5m56s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   23m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   14Mi   
+scaletestapp-55684d9dbb-m9grd   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     2m57s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     12s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     87s
+=== 2026-11-18 00:07:35 MSK
+scaletestapp   Deployment/scaletestapp   59527m/50   1     10    4     6m6s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   28m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   15Mi   
+scaletestapp-55684d9dbb-bxxxd   8m    8Mi    
+scaletestapp-55684d9dbb-m9grd   8m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m10s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m7s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     22s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     97s
+=== 2026-11-18 00:07:45 MSK
+scaletestapp   Deployment/scaletestapp   47324m/50   1     10    4     6m16s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   28m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   15Mi   
+scaletestapp-55684d9dbb-bxxxd   8m    8Mi    
+scaletestapp-55684d9dbb-m9grd   8m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m20s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m17s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     32s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     107s
+=== 2026-11-18 00:07:55 MSK
+scaletestapp   Deployment/scaletestapp   47324m/50   1     10    4     6m26s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   28m   21Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   15Mi   
+scaletestapp-55684d9dbb-bxxxd   4m    10Mi   
+scaletestapp-55684d9dbb-m9grd   7m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m31s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     43s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     118s
+=== 2026-11-18 00:08:05 MSK
+scaletestapp   Deployment/scaletestapp   49948m/50   1     10    4     6m36s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   24m   22Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   14Mi   
+scaletestapp-55684d9dbb-bxxxd   3m    11Mi   
+scaletestapp-55684d9dbb-m9grd   9m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m37s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     52s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m7s
+=== 2026-11-18 00:08:15 MSK
+scaletestapp   Deployment/scaletestapp   52454m/50   1     10    4     6m46s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   24m   22Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   14Mi   
+scaletestapp-55684d9dbb-bxxxd   3m    11Mi   
+scaletestapp-55684d9dbb-m9grd   9m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     6m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m47s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     62s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m17s
+=== 2026-11-18 00:08:25 MSK
+scaletestapp   Deployment/scaletestapp   52454m/50   1     10    4     6m56s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   26m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   14Mi   
+scaletestapp-55684d9dbb-bxxxd   5m    11Mi   
+scaletestapp-55684d9dbb-m9grd   8m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     3m57s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     72s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m27s
+=== 2026-11-18 00:08:35 MSK
+scaletestapp   Deployment/scaletestapp   54937m/50   1     10    4     7m7s
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   23m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   15Mi   
+scaletestapp-55684d9dbb-bxxxd   4m    12Mi   
+scaletestapp-55684d9dbb-m9grd   7m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m11s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m8s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     83s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m38s
+=== 2026-11-18 00:08:45 MSK
+scaletestapp   Deployment/scaletestapp   57530m/50   1     10    4     7m16s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   23m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   12m   15Mi   
+scaletestapp-55684d9dbb-bxxxd   4m    12Mi   
+scaletestapp-55684d9dbb-m9grd   7m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m20s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m17s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     92s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3s
+=== 2026-11-18 00:08:55 MSK
+scaletestapp   Deployment/scaletestapp   57530m/50   1     10    4     7m26s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   31m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   30m   16Mi   
+scaletestapp-55684d9dbb-bxxxd   8m    11Mi   
+scaletestapp-55684d9dbb-m9grd   8m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m30s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m27s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     102s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     2m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     13s
+=== 2026-11-18 00:09:05 MSK
+scaletestapp   Deployment/scaletestapp   59973m/50   1     10    5     7m36s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   24m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   16Mi   
+scaletestapp-55684d9dbb-bxxxd   4m    11Mi   
+scaletestapp-55684d9dbb-m9grd   7m    13Mi   
+scaletestapp-55684d9dbb-n4lq5   6m    7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m37s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     112s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m7s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     23s
+=== 2026-11-18 00:09:15 MSK
+scaletestapp   Deployment/scaletestapp   49752m/50   1     10    5     7m46s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   24m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   16Mi   
+scaletestapp-55684d9dbb-bxxxd   4m    11Mi   
+scaletestapp-55684d9dbb-m9grd   7m    13Mi   
+scaletestapp-55684d9dbb-n4lq5   6m    7Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     7m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m47s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m2s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m17s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     33s
+=== 2026-11-18 00:09:25 MSK
+scaletestapp   Deployment/scaletestapp   49752m/50   1     10    5     7m57s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   24m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   5m    11Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   2m    8Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m1s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     4m58s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m13s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m28s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     44s
+=== 2026-11-18 00:09:35 MSK
+scaletestapp   Deployment/scaletestapp   51605m/50   1     10    5     8m6s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   22m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   5m    11Mi   
+scaletestapp-55684d9dbb-m9grd   8m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   2m    8Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m10s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m7s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m22s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m37s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     53s
+=== 2026-11-18 00:09:45 MSK
+scaletestapp   Deployment/scaletestapp   53788m/50   1     10    5     8m16s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   22m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   5m    11Mi   
+scaletestapp-55684d9dbb-m9grd   8m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   2m    8Mi    
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m20s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m17s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m32s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     63s
+=== 2026-11-18 00:09:55 MSK
+scaletestapp   Deployment/scaletestapp   53788m/50   1     10    5     8m27s
+scaletestapp   5/5   5     5     8d
+scaletestapp-55684d9dbb-5fltg   24m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   19m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   5m    12Mi   
+scaletestapp-55684d9dbb-m9grd   8m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m31s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m43s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     3m58s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     74s
+=== 2026-11-18 00:10:05 MSK
+scaletestapp   Deployment/scaletestapp   55933m/50   1     10    5     8m36s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   34m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   17m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   9m    12Mi   
+scaletestapp-55684d9dbb-m9grd   13m   13Mi   
+scaletestapp-55684d9dbb-n4lq5   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m37s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     2m52s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     8s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m7s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     83s
+=== 2026-11-18 00:10:15 MSK
+scaletestapp   Deployment/scaletestapp   58046m/50   1     10    6     8m46s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   34m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   17m   17Mi   
+scaletestapp-55684d9dbb-bxxxd   9m    12Mi   
+scaletestapp-55684d9dbb-m9grd   13m   13Mi   
+scaletestapp-55684d9dbb-n4lq5   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     8m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m47s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m2s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     18s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m17s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     93s
+=== 2026-11-18 00:10:25 MSK
+scaletestapp   Deployment/scaletestapp   58046m/50   1     10    6     8m56s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   22m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   6m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    8Mi    
+scaletestapp-55684d9dbb-m9grd   10m   14Mi   
+scaletestapp-55684d9dbb-n4lq5   3m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     5m57s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     28s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m27s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     103s
+=== 2026-11-18 00:10:35 MSK
+scaletestapp   Deployment/scaletestapp   49738m/50   1     10    6     9m6s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   21m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   9m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    10Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   4m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m11s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m8s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m23s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     39s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m38s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     114s
+=== 2026-11-18 00:10:45 MSK
+scaletestapp   Deployment/scaletestapp   51474m/50   1     10    6     9m17s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   21m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   9m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    10Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   4m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m21s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m18s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m33s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     49s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m48s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m4s
+=== 2026-11-18 00:10:55 MSK
+scaletestapp   Deployment/scaletestapp   51474m/50   1     10    6     9m26s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   25m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   14m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   7m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    10Mi   
+scaletestapp-55684d9dbb-m9grd   10m   14Mi   
+scaletestapp-55684d9dbb-n4lq5   4m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m30s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m27s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     58s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     4m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m13s
+=== 2026-11-18 00:11:05 MSK
+scaletestapp   Deployment/scaletestapp   53278m/50   1     10    6     9m36s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   23m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   7m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   3m    11Mi   
+scaletestapp-55684d9dbb-m9grd   11m   14Mi   
+scaletestapp-55684d9dbb-n4lq5   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m40s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m37s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     3m52s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     68s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m7s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m23s
+=== 2026-11-18 00:11:15 MSK
+scaletestapp   Deployment/scaletestapp   54851m/50   1     10    6     9m46s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   23m   24Mi   
+scaletestapp-55684d9dbb-5hj5m   13m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   7m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   3m    11Mi   
+scaletestapp-55684d9dbb-m9grd   11m   14Mi   
+scaletestapp-55684d9dbb-n4lq5   5m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     9m50s
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m47s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m2s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     78s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m17s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m33s
+=== 2026-11-18 00:11:25 MSK
+scaletestapp   Deployment/scaletestapp   54851m/50   1     10    6     9m56s
+scaletestapp   6/6   6     6     8d
+scaletestapp-55684d9dbb-5fltg   27m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   15m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   7m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   3m    12Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   4m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     6m57s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     88s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m27s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m43s
+=== 2026-11-18 00:11:35 MSK
+scaletestapp   Deployment/scaletestapp   55344m/50   1     10    6     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   16m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   11m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   6m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   3m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m8s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     9s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m23s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     99s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m38s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     2m54s
+=== 2026-11-18 00:11:45 MSK
+scaletestapp   Deployment/scaletestapp   50787m/50   1     10    7     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   16m   23Mi   
+scaletestapp-55684d9dbb-5hj5m   11m   18Mi   
+scaletestapp-55684d9dbb-bxxxd   6m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   9m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   3m    11Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m17s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     18s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m32s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     108s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m3s
+=== 2026-11-18 00:11:55 MSK
+scaletestapp   Deployment/scaletestapp   50787m/50   1     10    7     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   2m    23Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    19Mi   
+scaletestapp-55684d9dbb-78fsf   6m    7Mi    
+scaletestapp-55684d9dbb-bxxxd   2m    13Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    11Mi   
+scaletestapp-55684d9dbb-m9grd   3m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    12Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m27s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     118s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     5m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m13s
+=== 2026-11-18 00:12:05 MSK
+scaletestapp   Deployment/scaletestapp   27570m/50   1     10    7     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    23Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    19Mi   
+scaletestapp-55684d9dbb-78fsf   1m    8Mi    
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    13Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m37s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     38s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     4m52s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m8s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m7s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m23s
+=== 2026-11-18 00:12:15 MSK
+scaletestapp   Deployment/scaletestapp   11777m/50   1     10    7     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    23Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    19Mi   
+scaletestapp-55684d9dbb-78fsf   1m    8Mi    
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    13Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     10m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m48s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     49s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m3s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m19s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m18s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m34s
+=== 2026-11-18 00:12:25 MSK
+scaletestapp   Deployment/scaletestapp   11777m/50   1     10    7     10m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    23Mi   
+scaletestapp-55684d9dbb-5hj5m   2m    20Mi   
+scaletestapp-55684d9dbb-78fsf   3m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    13Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     7m57s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     58s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m28s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m27s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m43s
+=== 2026-11-18 00:12:35 MSK
+scaletestapp   Deployment/scaletestapp   12m/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    24Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m7s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     68s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m22s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m38s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m37s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     3m53s
+=== 2026-11-18 00:12:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    24Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m17s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     78s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m32s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m48s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m3s
+=== 2026-11-18 00:12:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   13m   14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m27s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     88s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     2m58s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     6m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m13s
+=== 2026-11-18 00:13:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   0m    20Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   0m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m38s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     99s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     5m53s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m9s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m8s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m24s
+=== 2026-11-18 00:13:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   0m    20Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   0m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     11m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m47s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     108s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m2s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m18s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m17s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m33s
+=== 2026-11-18 00:13:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     11m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   0m    20Mi   
+scaletestapp-55684d9dbb-78fsf   1m    10Mi   
+scaletestapp-55684d9dbb-bxxxd   0m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    13Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     8m57s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     118s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m28s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m27s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m43s
+=== 2026-11-18 00:13:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   6m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   2m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m8s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m9s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m23s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m39s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m38s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     4m54s
+=== 2026-11-18 00:13:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   6m    11Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   2m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m17s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m18s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m32s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m48s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m3s
+=== 2026-11-18 00:13:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   9m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    12Mi   
+scaletestapp-55684d9dbb-m9grd   2m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m27s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     3m58s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     7m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m13s
+=== 2026-11-18 00:14:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   13m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   2m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m37s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m38s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     6m52s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m8s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m7s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m23s
+=== 2026-11-18 00:14:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   13m   25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    20Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   2m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   2m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    14Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     12m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m47s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m48s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m2s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m18s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m17s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m33s
+=== 2026-11-18 00:14:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     12m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   2m    20Mi   
+scaletestapp-55684d9dbb-78fsf   1m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     9m58s
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     2m59s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m13s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m29s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m28s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m44s
+=== 2026-11-18 00:14:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m8s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m22s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m38s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m37s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     5m53s
+=== 2026-11-18 00:14:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   0m    25Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    12Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m18s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m32s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m48s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m3s
+=== 2026-11-18 00:14:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   2m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     4m58s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     8m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m13s
+=== 2026-11-18 00:15:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   4m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m39s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     7m53s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m9s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m8s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m24s
+=== 2026-11-18 00:15:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   2m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   4m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     13m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m49s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m3s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m19s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m18s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m34s
+=== 2026-11-18 00:15:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     13m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   2m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   3m    15Mi   
+scaletestapp-55684d9dbb-78fsf   0m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     10m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     3m58s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m28s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m27s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m43s
+=== 2026-11-18 00:15:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    15Mi   
+scaletestapp-55684d9dbb-78fsf   2m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   0m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m8s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m22s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m38s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m37s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     6m53s
+=== 2026-11-18 00:15:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    15Mi   
+scaletestapp-55684d9dbb-78fsf   2m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   0m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   0m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m18s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m32s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m48s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m47s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m3s
+=== 2026-11-18 00:15:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    12Mi   
+scaletestapp-55684d9dbb-bxxxd   2m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    14Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m28s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m42s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     5m58s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     9m57s
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m13s
+=== 2026-11-18 00:16:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m39s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     8m53s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     6m9s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m24s
+=== 2026-11-18 00:16:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    14Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     14m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m48s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     9m2s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     6m18s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m33s
+=== 2026-11-18 00:16:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     14m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    15Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    13Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    14Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     15m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     11m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     4m58s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     9m12s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     6m28s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m43s
+=== 2026-11-18 00:16:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     15m
+scaletestapp   7/7   7     7     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-78fsf   1m    11Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    15Mi   
+scaletestapp-55684d9dbb-lwwx9   1m    14Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-n4lq5   1m    15Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     15m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+scaletestapp-55684d9dbb-78fsf   1/1   Running   0     5m8s
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     9m22s
+scaletestapp-55684d9dbb-lwwx9   1/1   Running   0     6m38s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+scaletestapp-55684d9dbb-n4lq5   1/1   Running   0     7m53s
+=== 2026-11-18 00:16:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    7     15m
+scaletestapp   4/4   4     4     8d
+scaletestapp-55684d9dbb-5fltg   1m    18Mi   
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-bxxxd   1m    15Mi   
+scaletestapp-55684d9dbb-m9grd   1m    15Mi   
+scaletestapp-55684d9dbb-5fltg   1/1   Running   0     15m
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+scaletestapp-55684d9dbb-bxxxd   1/1   Running   0     9m33s
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+=== 2026-11-18 00:16:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    4     15m
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5hj5m   1m    16Mi   
+scaletestapp-55684d9dbb-m9grd   1m    16Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     10m
+=== 2026-11-18 00:17:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    4     15m
+scaletestapp   2/2   2     2     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-m9grd   1m    16Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+scaletestapp-55684d9dbb-m9grd   1/1   Running   0     11m
+=== 2026-11-18 00:17:15 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    2     15m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+=== 2026-11-18 00:17:25 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     15m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     12m
+=== 2026-11-18 00:17:35 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     16m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     13m
+=== 2026-11-18 00:17:45 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     16m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     13m
+=== 2026-11-18 00:17:55 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     16m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    17Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     13m
+=== 2026-11-18 00:18:05 MSK
+scaletestapp   Deployment/scaletestapp   0/50   1     10    1     16m
+scaletestapp   1/1   1     1     8d
+scaletestapp-55684d9dbb-5hj5m   1m    15Mi   
+scaletestapp-55684d9dbb-5hj5m   1/1   Running   0     13m

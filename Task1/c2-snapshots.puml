@@ -1,0 +1,59 @@
+@startuml
+!include <C4/C4_Container>
+LAYOUT_LEFT_RIGHT()
+skinparam nodesep 22
+skinparam ranksep 230
+skinparam defaultFontName Arial
+skinparam dpi 110
+show stereotype
+
+title NovaMarket MVP — C2, снимки состояния для проекций других сервисов
+
+System_Boundary(nova, "NovaMarket") {
+  Container(orders, "Заказы", "C#, .NET", "Оформление и статусы заказа")
+  Container(inventory, "Склад", "C#, .NET", "Остатки и резервы")
+  Container(payments, "Платежи", "C#, .NET", "Оплата, возвраты,\nсрок оплаты")
+  Container(delivery, "Доставка", "C#, .NET", "Отправления по продавцам,\nзоны и тарифы")
+  Container(cart, "Корзина", "C#, .NET", "Товары до оформления")
+  Container(notifications, "Уведомления", "C#, .NET", "Продавцам и покупателям")
+  Container(reviews, "Отзывы", "C#, .NET", "Отзывы и рейтинг")
+  Container(catalog, "Каталог", "C#, .NET", "Товары, цены, наличие, рейтинг")
+  Container(sellers, "Продавцы", "C#, .NET", "Подключение продавцов")
+
+  Boundary(kafka, "Apache Kafka") {
+    ContainerQueue(t_order_sn, "order~_~_v1~_~_snapshot", "Kafka topic, compact", "Заказ: позиции и цены,\nадрес и получатель, отправления и их статусы")
+    ContainerQueue(t_cat_sn, "catalog~_~_v1~_~_snapshot", "Kafka topic, compact", "Товар: название, цена,\nпродавец, вес и габариты")
+    ContainerQueue(t_inv_sn, "inventory~_~_v1~_~_snapshot", "Kafka topic, compact", "Наличие товара")
+    ContainerQueue(t_rev_sn, "review~_~_v1~_~_snapshot", "Kafka topic, compact", "Рейтинг товара")
+    ContainerQueue(t_sel_sn, "seller~_~_v1~_~_snapshot", "Kafka topic, compact", "Продавец: адрес отгрузки,\nконтакты")
+    ContainerQueue(t_del_sn, "delivery~_~_v1~_~_snapshot", "Kafka topic, compact", "Зона доставки:\nадреса и тарифы")
+  }
+}
+
+Rel(orders, t_order_sn, "Публикует снимок заказа")
+Rel(orders, t_cat_sn, "Читает цены")
+Rel(orders, t_del_sn, "Читает тарифы")
+Rel(inventory, t_order_sn, "Читает позиции\nи отправления")
+Rel(inventory, t_inv_sn, "Публикует наличие")
+Rel(payments, t_order_sn, "Читает сумму\nи способ оплаты")
+Rel(delivery, t_order_sn, "Читает адрес, получателя\nи отправления")
+Rel(delivery, t_cat_sn, "Читает вес и габариты")
+Rel(delivery, t_sel_sn, "Читает адрес отгрузки")
+Rel(delivery, t_del_sn, "Публикует зоны и тарифы")
+Rel_U(cart, t_order_sn, "Читает позиции заказа")
+Rel_U(notifications, t_order_sn, "Читает контакты покупателя\nи продавцов заказа")
+Rel_U(notifications, t_sel_sn, "Читает контакты")
+Rel_U(reviews, t_rev_sn, "Публикует рейтинг")
+Rel_U(reviews, t_order_sn, "Читает покупателя\nи товары заказа")
+Rel_U(catalog, t_cat_sn, "Публикует товары")
+Rel_U(catalog, t_inv_sn, "Читает наличие")
+Rel_U(catalog, t_rev_sn, "Читает рейтинг")
+Rel_U(catalog, t_sel_sn, "Читает продавцов")
+Rel_U(sellers, t_sel_sn, "Публикует профиль")
+
+Lay_R(t_order_sn, t_cat_sn)
+Lay_R(t_cat_sn, t_inv_sn)
+Lay_R(t_inv_sn, t_rev_sn)
+Lay_R(t_rev_sn, t_sel_sn)
+Lay_R(t_sel_sn, t_del_sn)
+@enduml

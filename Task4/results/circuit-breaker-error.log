@@ -1,0 +1,32 @@
+23:06:07 Starting Circuit Breaker test...
+23:06:07 Logistics call failed (1), fallback after 0.0 s
+23:06:08 Logistics call failed (2), fallback after 0.0 s
+23:06:09 Logistics call failed (3), fallback after 0.0 s
+23:06:10 Logistics call failed (4), fallback after 0.0 s
+23:06:11 Logistics call failed (5), fallback after 0.0 s
+23:06:12 Circuit Breaker activated after 5 failed calls: fallback in 3 ms without calling logistics
+23:06:42 Probe call after the pause failed: Circuit Breaker stays open
+23:07:12 Logistics answers again: Circuit Breaker closed, calls restored
+23:07:47 Check passed: circuit opened after 5 failures, the probe failed, then calls were restored
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      logistics broken                                                                  60  60(100.00%) |      3       1       8      3 |    0.60        0.60
+GET      logistics ok                                                                      40    5(12.50%) |      3       1       5      4 |    0.40        0.05
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                       100   65(65.00%) |      3       1       8      3 |    1.00        0.65
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      logistics broken                                                                        3      4      4      4      5      5      7      9      9      9      9     60
+GET      logistics ok                                                                            4      4      4      5      5      6      6      6      6      6      6     40
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                              3      4      4      5      5      5      7      9      9      9      9    100
+
+Error report
+# occurrences      Error
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+6                  GET logistics broken: logistics failed, fallback after 0.0 s
+54                 GET logistics broken: circuit open: fallback without calling logistics
+5                  GET logistics ok: circuit open: fallback without calling logistics
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,60 @@
+@startuml
+!include <C4/C4_Container>
+LAYOUT_LEFT_RIGHT()
+skinparam nodesep 22
+skinparam ranksep 230
+skinparam defaultFontName Arial
+skinparam dpi 110
+show stereotype
+
+title NovaMarket MVP — C2, события саги и доставки через Kafka
+
+System_Boundary(nova, "NovaMarket") {
+  Container(orders, "Заказы", "C#, .NET", "Оформление и статусы заказа")
+  Container(inventory, "Склад", "C#, .NET", "Остатки и резервы")
+  Container(payments, "Платежи", "C#, .NET", "Оплата, возвраты,\nсрок оплаты")
+  Container(delivery, "Доставка", "C#, .NET", "Отправления по продавцам,\nзоны и тарифы")
+  Container(cart, "Корзина", "C#, .NET", "Товары до оформления")
+  Container(notifications, "Уведомления", "C#, .NET", "Продавцам и покупателям")
+  Container(reviews, "Отзывы", "C#, .NET", "Отзывы и рейтинг")
+  Container(hooks, "Приём вебхуков", "C#, .NET", "Вебхуки платёжного шлюза\nи логистики")
+
+  Boundary(kafka, "Apache Kafka") {
+    ContainerQueue(t_order_ev, "order~_~_v1~_~_event", "Kafka topic, delete", "События заказа")
+    ContainerQueue(t_inv_ev, "inventory~_~_v1~_~_event", "Kafka topic, delete", "События склада")
+    ContainerQueue(t_pay_ev, "payment~_~_v1~_~_event", "Kafka topic, delete", "События оплаты")
+    ContainerQueue(t_del_ev, "delivery~_~_v1~_~_event", "Kafka topic, delete", "События доставки")
+    ContainerQueue(t_pg_ev, "payment-gateway~_~_v1~_~_event", "Kafka topic, delete", "Вебхуки платёжного шлюза")
+    ContainerQueue(t_lg_ev, "logistics~_~_v1~_~_event", "Kafka topic, delete", "Вебхуки логистики")
+  }
+}
+
+Rel(orders, t_order_ev, "Публикует OrderCreated,\nOrderPartiallyCancelled,\nOrderCancelled")
+Rel(orders, t_inv_ev, "Читает StockReserved,\nStockReservationFailed, StockReleased,\nStockReservationExpired")
+Rel(orders, t_pay_ev, "Читает PaymentSucceeded,\nPaymentFailed, PaymentTimedOut,\nRefundSucceeded, RefundFailed")
+Rel(orders, t_del_ev, "Читает ShipmentCreated,\nShipmentRequestTimedOut, ShipmentCancelled,\nShipmentDispatched, ShipmentDelivered")
+Rel(inventory, t_inv_ev, "Публикует StockReserved,\nStockReservationFailed, StockReleased,\nStockReservationExpired")
+Rel(inventory, t_order_ev, "Читает OrderCreated")
+Rel(inventory, t_pay_ev, "Читает PaymentSucceeded,\nPaymentFailed, PaymentTimedOut")
+Rel(inventory, t_del_ev, "Читает ShipmentCancelled,\nShipmentDispatched")
+Rel(payments, t_pay_ev, "Публикует PaymentSucceeded,\nPaymentFailed, PaymentTimedOut,\nRefundSucceeded, RefundFailed")
+Rel(payments, t_inv_ev, "Читает StockReserved,\nStockReservationExpired")
+Rel(payments, t_del_ev, "Читает ShipmentCancelled")
+Rel(delivery, t_del_ev, "Публикует ShipmentCreated,\nShipmentRequestTimedOut, ShipmentCancelled,\nShipmentDispatched, ShipmentDelivered")
+Rel(delivery, t_pay_ev, "Читает PaymentSucceeded")
+Rel_U(cart, t_pay_ev, "Читает PaymentSucceeded")
+Rel_U(notifications, t_order_ev, "Читает OrderPartiallyCancelled,\nOrderCancelled")
+Rel_U(notifications, t_pay_ev, "Читает PaymentSucceeded")
+Rel_U(notifications, t_del_ev, "Читает ShipmentCreated")
+Rel_U(reviews, t_del_ev, "Читает ShipmentDelivered")
+Rel_U(hooks, t_pg_ev, "Публикует\nPaymentGatewayWebhookReceived")
+Rel_U(hooks, t_lg_ev, "Публикует\nLogisticsWebhookReceived")
+Rel(payments, t_pg_ev, "Читает\nPaymentGatewayWebhookReceived")
+Rel(delivery, t_lg_ev, "Читает\nLogisticsWebhookReceived")
+
+Lay_R(t_order_ev, t_inv_ev)
+Lay_R(t_inv_ev, t_pay_ev)
+Lay_R(t_pay_ev, t_del_ev)
+Lay_R(t_del_ev, t_pg_ev)
+Lay_R(t_pg_ev, t_lg_ev)
+@enduml
